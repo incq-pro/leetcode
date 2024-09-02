@@ -4,13 +4,28 @@ import (
 	"fmt"
 	longest_palindromic_substring "leetcode/longest-palindromic-substring"
 	longest_substring_without_repeating_characters "leetcode/longest-substring-without-repeating-characters"
+	maximize_the_confusion_of_an_exam "leetcode/maximize-the-confusion-of-an-exam"
 	minimum_array_end "leetcode/minimum-array-end"
 	two_sum "leetcode/two-sum"
 )
 
 func main() {
-	test5()
+	test2024()
 }
+
+func test2024() {
+	fmt.Println(maximize_the_confusion_of_an_exam.MaxConsecutiveAnswers("T", 1))
+	fmt.Println(maximize_the_confusion_of_an_exam.MaxConsecutiveAnswers("F", 1))
+	fmt.Println(maximize_the_confusion_of_an_exam.MaxConsecutiveAnswers("TT", 1))
+	fmt.Println(maximize_the_confusion_of_an_exam.MaxConsecutiveAnswers("TT", 2))
+	fmt.Println(maximize_the_confusion_of_an_exam.MaxConsecutiveAnswers("FF", 1))
+	fmt.Println(maximize_the_confusion_of_an_exam.MaxConsecutiveAnswers("FF", 2))
+	fmt.Println(maximize_the_confusion_of_an_exam.MaxConsecutiveAnswers("TF", 1))
+	fmt.Println(maximize_the_confusion_of_an_exam.MaxConsecutiveAnswers("TF", 2))
+	fmt.Println(maximize_the_confusion_of_an_exam.MaxConsecutiveAnswers("TFFT", 1))
+	fmt.Println(maximize_the_confusion_of_an_exam.MaxConsecutiveAnswers("TFFT", 2))
+}
+
 func test5() {
 	//fmt.Println(longest_palindromic_substring.LongestPalindrome("a"))
 	//fmt.Println(longest_palindromic_substring.LongestPalindrome("ab"))
