@@ -1,3 +1,6 @@
+// 2024. 考试的最大困扰度
+// https://leetcode.cn/problems/maximize-the-confusion-of-an-exam/
+
 package maximize_the_confusion_of_an_exam
 
 import "fmt"

@@ -1,3 +1,6 @@
+// 3133. 数组最后一个元素的最小值
+// https://leetcode.cn/problems/minimum-array-end/
+
 package minimum_array_end
 
 func minEnd(n int, x int) int64 {

@@ -1,3 +1,6 @@
+// 5. 最长回文子串
+// https://leetcode.cn/problems/longest-palindromic-substring/
+
 package longest_palindromic_substring
 
 func longestPalindrome(s string) string {

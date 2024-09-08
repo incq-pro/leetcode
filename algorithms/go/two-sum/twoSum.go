@@ -1,3 +1,6 @@
+// 1. 两数之和
+// https://leetcode.cn/problems/two-sum/
+
 package two_sum
 
 func twoSum(nums []int, target int) []int {

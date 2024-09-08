@@ -2,15 +2,80 @@ package main
 
 import (
 	"fmt"
+	clear_digits "leetcode/clear-digits"
+	find_the_maximum_length_of_a_good_subsequence_i "leetcode/find-the-maximum-length-of-a-good-subsequence-i"
+	happy_students "leetcode/happy-students"
 	longest_palindromic_substring "leetcode/longest-palindromic-substring"
 	longest_substring_without_repeating_characters "leetcode/longest-substring-without-repeating-characters"
 	maximize_the_confusion_of_an_exam "leetcode/maximize-the-confusion-of-an-exam"
+	maximum_strength_of_a_group "leetcode/maximum-strength-of-a-group"
 	minimum_array_end "leetcode/minimum-array-end"
+	reverse_integer "leetcode/reverse-integer"
 	two_sum "leetcode/two-sum"
+	zigzag_conversion "leetcode/zigzag-conversion"
+	"math"
 )
 
 func main() {
-	test2024()
+	test3176()
+}
+
+func test3176() {
+	fmt.Println(find_the_maximum_length_of_a_good_subsequence_i.MaximumLength([]int{1, 2, 1, 1, 3}, 2))
+	fmt.Println(find_the_maximum_length_of_a_good_subsequence_i.MaximumLength([]int{1, 2, 3, 4, 5, 1}, 0))
+	fmt.Println(find_the_maximum_length_of_a_good_subsequence_i.MaximumLength([]int{1}, 0))
+	fmt.Println(find_the_maximum_length_of_a_good_subsequence_i.MaximumLength([]int{1}, 1))
+}
+
+func test3174() {
+	fmt.Println(clear_digits.ClearDigits("abc"))
+	fmt.Println(clear_digits.ClearDigits("cb34"))
+	fmt.Println(clear_digits.ClearDigits("a1"))
+	fmt.Println(clear_digits.ClearDigits("a1b2"))
+	fmt.Println(clear_digits.ClearDigits("a1bc2"))
+	fmt.Println(clear_digits.ClearDigits("a1bc23"))
+}
+
+func test7() {
+	fmt.Println(reverse_integer.Reverse(120))
+	fmt.Println(reverse_integer.Reverse(-123))
+	fmt.Println(reverse_integer.Reverse(2147483621))
+	fmt.Println(reverse_integer.Reverse(-2147483621))
+	fmt.Println(reverse_integer.Reverse(7463847412))
+	fmt.Println(reverse_integer.Reverse(8463847412))
+	fmt.Println(reverse_integer.Reverse(-8463847412))
+	fmt.Println(reverse_integer.Reverse(-9463847412))
+	fmt.Println(reverse_integer.Reverse(-8463847413))
+	fmt.Println(math.MaxInt32, reverse_integer.Reverse(math.MaxInt32))
+	fmt.Println(math.MinInt32, reverse_integer.Reverse(math.MinInt32))
+}
+
+func test2680() {
+	fmt.Println(happy_students.CountWays([]int{0}))
+	fmt.Println(happy_students.CountWays([]int{0, 1}))
+	fmt.Println(happy_students.CountWays([]int{1, 1}))
+	fmt.Println(happy_students.CountWays([]int{0, 1, 2}))
+	fmt.Println(happy_students.CountWays([]int{0, 3, 2, 2}))
+	fmt.Println(happy_students.CountWays([]int{6, 0, 3, 3, 6, 7, 2, 7}))
+
+}
+
+func test6() {
+	fmt.Println(zigzag_conversion.Convert("PAYPALISHIRING", 3))
+	fmt.Println(zigzag_conversion.Convert("PAYPALISHIRING", 4))
+}
+
+func test2708() {
+	fmt.Println(maximum_strength_of_a_group.MaxStrength([]int{3, -1, -5, 2, 5, -9}))
+	fmt.Println(maximum_strength_of_a_group.MaxStrength([]int{-4, -5, -4}))
+	fmt.Println(maximum_strength_of_a_group.MaxStrength([]int{-1}))
+	fmt.Println(maximum_strength_of_a_group.MaxStrength([]int{-2}))
+	fmt.Println(maximum_strength_of_a_group.MaxStrength([]int{0}))
+	fmt.Println(maximum_strength_of_a_group.MaxStrength([]int{-2, 0}))
+	fmt.Println(maximum_strength_of_a_group.MaxStrength([]int{0, 0}))
+	fmt.Println(maximum_strength_of_a_group.MaxStrength([]int{-9, 1}))
+	fmt.Println(maximum_strength_of_a_group.MaxStrength([]int{9, 0}))
+	fmt.Println(maximum_strength_of_a_group.MaxStrength([]int{-9, -1, 0, 2}))
 }
 
 func test2024() {
@@ -27,13 +92,13 @@ func test2024() {
 }
 
 func test5() {
-	//fmt.Println(longest_palindromic_substring.LongestPalindrome("a"))
-	//fmt.Println(longest_palindromic_substring.LongestPalindrome("ab"))
-	//fmt.Println(longest_palindromic_substring.LongestPalindrome("aba"))
-	//fmt.Println(longest_palindromic_substring.LongestPalindrome("abba"))
-	//fmt.Println(longest_palindromic_substring.LongestPalindrome("aa"))
-	//fmt.Println(longest_palindromic_substring.LongestPalindrome("aaa"))
-	//fmt.Println(longest_palindromic_substring.LongestPalindrome("aaaa"))
+	fmt.Println(longest_palindromic_substring.LongestPalindrome("a"))
+	fmt.Println(longest_palindromic_substring.LongestPalindrome("ab"))
+	fmt.Println(longest_palindromic_substring.LongestPalindrome("aba"))
+	fmt.Println(longest_palindromic_substring.LongestPalindrome("abba"))
+	fmt.Println(longest_palindromic_substring.LongestPalindrome("aa"))
+	fmt.Println(longest_palindromic_substring.LongestPalindrome("aaa"))
+	fmt.Println(longest_palindromic_substring.LongestPalindrome("aaaa"))
 	fmt.Println(longest_palindromic_substring.LongestPalindrome("aaaabaaaaba"))
 }
 
