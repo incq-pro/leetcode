@@ -3,21 +3,43 @@ package main
 import (
 	"fmt"
 	clear_digits "leetcode/clear-digits"
+	count_increasing_quadruplets "leetcode/count-increasing-quadruplets"
 	find_the_maximum_length_of_a_good_subsequence_i "leetcode/find-the-maximum-length-of-a-good-subsequence-i"
 	happy_students "leetcode/happy-students"
+	length_of_the_longest_alphabetical_continuous_substring "leetcode/length-of-the-longest-alphabetical-continuous-substring"
 	longest_palindromic_substring "leetcode/longest-palindromic-substring"
 	longest_substring_without_repeating_characters "leetcode/longest-substring-without-repeating-characters"
 	maximize_the_confusion_of_an_exam "leetcode/maximize-the-confusion-of-an-exam"
 	maximum_strength_of_a_group "leetcode/maximum-strength-of-a-group"
 	minimum_array_end "leetcode/minimum-array-end"
 	reverse_integer "leetcode/reverse-integer"
+	the_latest_time_to_catch_a_bus "leetcode/the-latest-time-to-catch-a-bus"
 	two_sum "leetcode/two-sum"
 	zigzag_conversion "leetcode/zigzag-conversion"
 	"math"
 )
 
 func main() {
-	test3176()
+	test2414()
+}
+
+func test2414() {
+	fmt.Println(length_of_the_longest_alphabetical_continuous_substring.LongestContinuousSubstring("abacaba"))
+	fmt.Println(length_of_the_longest_alphabetical_continuous_substring.LongestContinuousSubstring("abcde"))
+	fmt.Println(length_of_the_longest_alphabetical_continuous_substring.LongestContinuousSubstring("a"))
+	fmt.Println(length_of_the_longest_alphabetical_continuous_substring.LongestContinuousSubstring("aaaaabcdeaaaaa"))
+	fmt.Println(length_of_the_longest_alphabetical_continuous_substring.LongestContinuousSubstring("abcdefghijklmnopqrstuvwxyza"))
+}
+
+func test2332() {
+	fmt.Println(the_latest_time_to_catch_a_bus.LatestTimeCatchTheBus([]int{10, 20}, []int{2, 17, 18, 19}, 2))
+	fmt.Println(the_latest_time_to_catch_a_bus.LatestTimeCatchTheBus([]int{20, 30, 10}, []int{19, 13, 26, 4, 25, 11, 21}, 2))
+	fmt.Println(the_latest_time_to_catch_a_bus.LatestTimeCatchTheBus([]int{11}, []int{9, 11}, 1))
+	fmt.Println(the_latest_time_to_catch_a_bus.LatestTimeCatchTheBus([]int{11}, []int{11, 13}, 2))
+}
+func test2552() {
+	fmt.Println(count_increasing_quadruplets.CountQuadruplets([]int{1, 3, 2, 4, 5}))
+	fmt.Println(count_increasing_quadruplets.CountQuadruplets([]int{1, 2, 3, 4}))
 }
 
 func test3176() {
