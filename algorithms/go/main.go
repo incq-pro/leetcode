@@ -13,14 +13,33 @@ import (
 	maximum_strength_of_a_group "leetcode/maximum-strength-of-a-group"
 	minimum_array_end "leetcode/minimum-array-end"
 	reverse_integer "leetcode/reverse-integer"
+	seat_reservation_manager "leetcode/seat-reservation-manager"
 	the_latest_time_to_catch_a_bus "leetcode/the-latest-time-to-catch-a-bus"
+	time_needed_to_buy_tickets "leetcode/time-needed-to-buy-tickets"
 	two_sum "leetcode/two-sum"
 	zigzag_conversion "leetcode/zigzag-conversion"
 	"math"
 )
 
 func main() {
-	test2414()
+	test1845()
+}
+
+func test1845() {
+	seatManager := seat_reservation_manager.Constructor(5)
+	fmt.Println(seatManager.Reserve())
+	fmt.Println(seatManager.Reserve())
+	seatManager.Unreserve(2)
+	fmt.Println(seatManager.Reserve())
+	fmt.Println(seatManager.Reserve())
+	fmt.Println(seatManager.Reserve())
+	fmt.Println(seatManager.Reserve())
+	seatManager.Unreserve(5)
+}
+
+func test2073() {
+	fmt.Println(time_needed_to_buy_tickets.TimeRequiredToBuy([]int{2, 3, 2}, 2))
+	fmt.Println(time_needed_to_buy_tickets.TimeRequiredToBuy([]int{5, 1, 1, 1}, 0))
 }
 
 func test2414() {
