@@ -3,6 +3,7 @@
 
 | #    | Title | Solution   | Difficulty |
 |------|-------|---------------|------------|
+| 1436 | [旅行终点站](https://leetcode.cn/problems/destination-city/)| [go](./algorithms/go/destination-city/destinationCity.go)| Easy       |
 | 1845 | [座位预约管理系统](https://leetcode.cn/problems/seat-reservation-manager)| [go](./algorithms/go/seat-reservation-manager/seatReservationManager.go)| Medium       |
 | 2073 | [买票需要的时间](https://leetcode.cn/problems/time-needed-to-buy-tickets)| [go](./algorithms/go/time-needed-to-buy-tickets/timeNeededToBuyTickets.go)| Easy       |
 | 2414 | [最长的字母序连续子字符串的长度](https://leetcode.cn/problems/length-of-the-longest-alphabetical-continuous-substring)| [go](./algorithms/go/length-of-the-longest-alphabetical-continuous-substring/lengthOfTheLongestAlphabeticalContinuousSubstring.go)| Medium     |

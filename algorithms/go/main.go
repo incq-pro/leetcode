@@ -4,6 +4,7 @@ import (
 	"fmt"
 	clear_digits "leetcode/clear-digits"
 	count_increasing_quadruplets "leetcode/count-increasing-quadruplets"
+	destination_city "leetcode/destination-city"
 	find_the_maximum_length_of_a_good_subsequence_i "leetcode/find-the-maximum-length-of-a-good-subsequence-i"
 	happy_students "leetcode/happy-students"
 	length_of_the_longest_alphabetical_continuous_substring "leetcode/length-of-the-longest-alphabetical-continuous-substring"
@@ -22,7 +23,10 @@ import (
 )
 
 func main() {
-	test1845()
+	test1436()
+}
+func test1436() {
+	fmt.Println(destination_city.DestCity([][]string{{"A", "B"}, {"B", "C"}}))
 }
 
 func test1845() {
