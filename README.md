@@ -3,6 +3,8 @@
 
 | #    | Title | Solution   | Difficulty |
 |------|-------|---------------|------------|
+| 8 | [字符串转换整数 (atoi)](https://leetcode.cn/problems/string-to-integer-atoi/)| [go](./algorithms/go/string-to-integer-atoi/stringToIntegerAtoi.go)| Medium       |
+| 3171 | [找到按位或最接近 K 的子数组](https://leetcode.cn/problems/find-subarray-with-bitwise-or-closest-to-k/)| [go](./algorithms/go/find-subarray-with-bitwise-or-closest-to-k/solution.go)| Hard       |
 | 1436 | [旅行终点站](https://leetcode.cn/problems/destination-city/)| [go](./algorithms/go/destination-city/destinationCity.go)| Easy       |
 | 1845 | [座位预约管理系统](https://leetcode.cn/problems/seat-reservation-manager)| [go](./algorithms/go/seat-reservation-manager/seatReservationManager.go)| Medium       |
 | 2073 | [买票需要的时间](https://leetcode.cn/problems/time-needed-to-buy-tickets)| [go](./algorithms/go/time-needed-to-buy-tickets/timeNeededToBuyTickets.go)| Easy       |

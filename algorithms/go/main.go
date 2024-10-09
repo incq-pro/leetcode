@@ -5,6 +5,7 @@ import (
 	clear_digits "leetcode/clear-digits"
 	count_increasing_quadruplets "leetcode/count-increasing-quadruplets"
 	destination_city "leetcode/destination-city"
+	find_subarray_with_bitwise_or_closest_to_k "leetcode/find-subarray-with-bitwise-or-closest-to-k"
 	find_the_maximum_length_of_a_good_subsequence_i "leetcode/find-the-maximum-length-of-a-good-subsequence-i"
 	happy_students "leetcode/happy-students"
 	length_of_the_longest_alphabetical_continuous_substring "leetcode/length-of-the-longest-alphabetical-continuous-substring"
@@ -15,6 +16,7 @@ import (
 	minimum_array_end "leetcode/minimum-array-end"
 	reverse_integer "leetcode/reverse-integer"
 	seat_reservation_manager "leetcode/seat-reservation-manager"
+	string_to_integer_atoi "leetcode/string-to-integer-atoi"
 	the_latest_time_to_catch_a_bus "leetcode/the-latest-time-to-catch-a-bus"
 	time_needed_to_buy_tickets "leetcode/time-needed-to-buy-tickets"
 	two_sum "leetcode/two-sum"
@@ -23,8 +25,24 @@ import (
 )
 
 func main() {
-	test1436()
+	test8()
 }
+
+func test8() {
+	fmt.Println(string_to_integer_atoi.MyAtoi("42"))
+	fmt.Println(string_to_integer_atoi.MyAtoi(" -042"))
+	fmt.Println(string_to_integer_atoi.MyAtoi("1337c0d3"))
+	fmt.Println(string_to_integer_atoi.MyAtoi("0-1"))
+	fmt.Println(string_to_integer_atoi.MyAtoi("words and 987"))
+}
+
+func test3171() {
+	fmt.Println(find_subarray_with_bitwise_or_closest_to_k.MinimumDifference([]int{1}, 1))
+	fmt.Println(find_subarray_with_bitwise_or_closest_to_k.MinimumDifference([]int{1}, 2))
+	fmt.Println(find_subarray_with_bitwise_or_closest_to_k.MinimumDifference([]int{1, 2}, 2))
+	fmt.Println(find_subarray_with_bitwise_or_closest_to_k.MinimumDifference([]int{1, 2}, 3))
+}
+
 func test1436() {
 	fmt.Println(destination_city.DestCity([][]string{{"A", "B"}, {"B", "C"}}))
 }
