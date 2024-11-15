@@ -4,9 +4,12 @@ import (
 	"fmt"
 	clear_digits "leetcode/clear-digits"
 	count_increasing_quadruplets "leetcode/count-increasing-quadruplets"
+	count_pairs_that_form_a_complete_day_i "leetcode/count-pairs-that-form-a-complete-day-i"
 	destination_city "leetcode/destination-city"
 	find_subarray_with_bitwise_or_closest_to_k "leetcode/find-subarray-with-bitwise-or-closest-to-k"
 	find_the_maximum_length_of_a_good_subsequence_i "leetcode/find-the-maximum-length-of-a-good-subsequence-i"
+	find_the_number_of_good_pairs_i "leetcode/find-the-number-of-good-pairs-i"
+	find_the_number_of_good_pairs_ii "leetcode/find-the-number-of-good-pairs-ii"
 	happy_students "leetcode/happy-students"
 	length_of_the_longest_alphabetical_continuous_substring "leetcode/length-of-the-longest-alphabetical-continuous-substring"
 	longest_palindromic_substring "leetcode/longest-palindromic-substring"
@@ -14,8 +17,13 @@ import (
 	maximize_the_confusion_of_an_exam "leetcode/maximize-the-confusion-of-an-exam"
 	maximum_strength_of_a_group "leetcode/maximum-strength-of-a-group"
 	minimum_array_end "leetcode/minimum-array-end"
+	minimum_cost_to_cut_a_stick "leetcode/minimum-cost-to-cut-a-stick"
+	minimum_number_of_flips_to_make_binary_grid_palindromic_i "leetcode/minimum-number-of-flips-to-make-binary-grid-palindromic-i"
+	palindrome_number "leetcode/palindrome-number"
 	reverse_integer "leetcode/reverse-integer"
 	seat_reservation_manager "leetcode/seat-reservation-manager"
+	smallest_range_i "leetcode/smallest-range-i"
+	smallest_range_ii "leetcode/smallest-range-ii"
 	string_to_integer_atoi "leetcode/string-to-integer-atoi"
 	the_latest_time_to_catch_a_bus "leetcode/the-latest-time-to-catch-a-bus"
 	time_needed_to_buy_tickets "leetcode/time-needed-to-buy-tickets"
@@ -25,7 +33,58 @@ import (
 )
 
 func main() {
-	test8()
+	test3239()
+}
+
+func test3239() {
+	fmt.Println(minimum_number_of_flips_to_make_binary_grid_palindromic_i.MinFlips([][]int{{1, 0, 0}, {0, 0, 0}, {0, 0, 1}}))
+	fmt.Println(minimum_number_of_flips_to_make_binary_grid_palindromic_i.MinFlips([][]int{{0, 1}, {0, 1}, {0, 0}}))
+}
+
+func test1547() {
+	fmt.Println(minimum_cost_to_cut_a_stick.MinCost(7, []int{1, 3, 4, 5}))
+	fmt.Println(minimum_cost_to_cut_a_stick.MinCost(9, []int{5, 6, 1, 4, 2}))
+}
+
+func test3184() {
+	fmt.Println(count_pairs_that_form_a_complete_day_i.CountCompleteDayPairs([]int{12, 12, 30, 24, 24}))
+	fmt.Println(count_pairs_that_form_a_complete_day_i.CountCompleteDayPairs([]int{72, 48, 24, 3}))
+}
+
+func test9080() {
+	fmt.Println(smallest_range_i.SmallestRangeI([]int{1}, 0))
+	fmt.Println(smallest_range_i.SmallestRangeI([]int{0, 10}, 2))
+	fmt.Println(smallest_range_i.SmallestRangeI([]int{1, 3, 6}, 3))
+}
+
+func test910() {
+	fmt.Println(smallest_range_ii.SmallestRangeII([]int{1}, 0))
+	fmt.Println(smallest_range_ii.SmallestRangeII([]int{0, 10}, 2))
+	fmt.Println(smallest_range_ii.SmallestRangeII([]int{1, 3, 6}, 3))
+}
+
+func test9() {
+	fmt.Println(palindrome_number.IsPalindrome(-11))
+	fmt.Println(palindrome_number.IsPalindrome(-2))
+	fmt.Println(palindrome_number.IsPalindrome(-1))
+	fmt.Println(palindrome_number.IsPalindrome(0))
+	fmt.Println(palindrome_number.IsPalindrome(1))
+	fmt.Println(palindrome_number.IsPalindrome(2))
+	fmt.Println(palindrome_number.IsPalindrome(10))
+	fmt.Println(palindrome_number.IsPalindrome(11))
+	fmt.Println(palindrome_number.IsPalindrome(12))
+	fmt.Println(palindrome_number.IsPalindrome(121))
+	fmt.Println(palindrome_number.IsPalindrome(121))
+}
+
+func test3164() {
+	fmt.Println(find_the_number_of_good_pairs_ii.NumberOfPairs([]int{1, 3, 4}, []int{1, 3, 4}, 1))
+	fmt.Println(find_the_number_of_good_pairs_ii.NumberOfPairs([]int{1, 2, 4, 12}, []int{2, 4}, 3))
+}
+
+func test3162() {
+	fmt.Println(find_the_number_of_good_pairs_i.NumberOfPairs([]int{1, 3, 4}, []int{1, 3, 4}, 1))
+	fmt.Println(find_the_number_of_good_pairs_i.NumberOfPairs([]int{1, 2, 4, 12}, []int{2, 4}, 3))
 }
 
 func test8() {
