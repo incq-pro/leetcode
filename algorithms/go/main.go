@@ -2,26 +2,37 @@ package main
 
 import (
 	"fmt"
+	best_time_to_buy_and_sell_stock "leetcode/best-time-to-buy-and-sell-stock"
+	best_time_to_buy_and_sell_stock_ii "leetcode/best-time-to-buy-and-sell-stock-ii"
 	clear_digits "leetcode/clear-digits"
+	container_with_most_water "leetcode/container-with-most-water"
 	count_increasing_quadruplets "leetcode/count-increasing-quadruplets"
 	count_pairs_that_form_a_complete_day_i "leetcode/count-pairs-that-form-a-complete-day-i"
 	destination_city "leetcode/destination-city"
+	final_array_state_after_k_multiplication_operations_i "leetcode/final-array-state-after-k-multiplication-operations-i"
 	find_subarray_with_bitwise_or_closest_to_k "leetcode/find-subarray-with-bitwise-or-closest-to-k"
 	find_the_maximum_length_of_a_good_subsequence_i "leetcode/find-the-maximum-length-of-a-good-subsequence-i"
 	find_the_number_of_good_pairs_i "leetcode/find-the-number-of-good-pairs-i"
 	find_the_number_of_good_pairs_ii "leetcode/find-the-number-of-good-pairs-ii"
 	happy_students "leetcode/happy-students"
+	jump_game "leetcode/jump-game"
+	jump_game_ii "leetcode/jump-game-ii"
+	knight_dialer "leetcode/knight-dialer"
 	length_of_the_longest_alphabetical_continuous_substring "leetcode/length-of-the-longest-alphabetical-continuous-substring"
 	longest_palindromic_substring "leetcode/longest-palindromic-substring"
 	longest_substring_without_repeating_characters "leetcode/longest-substring-without-repeating-characters"
 	maximize_the_confusion_of_an_exam "leetcode/maximize-the-confusion-of-an-exam"
+	maximum_spending_after_buying_items "leetcode/maximum-spending-after-buying-items"
 	maximum_strength_of_a_group "leetcode/maximum-strength-of-a-group"
 	minimum_array_end "leetcode/minimum-array-end"
 	minimum_cost_to_cut_a_stick "leetcode/minimum-cost-to-cut-a-stick"
+	minimum_moves_to_capture_the_queen "leetcode/minimum-moves-to-capture-the-queen"
 	minimum_number_of_flips_to_make_binary_grid_palindromic_i "leetcode/minimum-number-of-flips-to-make-binary-grid-palindromic-i"
 	palindrome_number "leetcode/palindrome-number"
 	reverse_integer "leetcode/reverse-integer"
 	seat_reservation_manager "leetcode/seat-reservation-manager"
+	semi_ordered_permutation "leetcode/semi-ordered-permutation"
+	shortest_distance_after_road_addition_queries_ii "leetcode/shortest-distance-after-road-addition-queries-ii"
 	smallest_range_i "leetcode/smallest-range-i"
 	smallest_range_ii "leetcode/smallest-range-ii"
 	string_to_integer_atoi "leetcode/string-to-integer-atoi"
@@ -33,9 +44,73 @@ import (
 )
 
 func main() {
-	test3239()
+	test3264()
 }
 
+func test3264() {
+	fmt.Println(final_array_state_after_k_multiplication_operations_i.GetFinalState([]int{2, 1, 3, 5, 6}, 5, 2))
+	fmt.Println(final_array_state_after_k_multiplication_operations_i.GetFinalState([]int{1, 2}, 3, 4))
+}
+
+func test122() {
+	fmt.Println(best_time_to_buy_and_sell_stock_ii.MaxProfit([]int{7, 1, 5, 3, 6, 4}))
+	fmt.Println(best_time_to_buy_and_sell_stock_ii.MaxProfit([]int{1, 2, 3, 4, 5}))
+	fmt.Println(best_time_to_buy_and_sell_stock_ii.MaxProfit([]int{7, 6, 4, 3, 1}))
+}
+
+func test121() {
+	fmt.Println(best_time_to_buy_and_sell_stock.MaxProfit([]int{7, 1, 5, 3, 6, 4}))
+	fmt.Println(best_time_to_buy_and_sell_stock.MaxProfit([]int{7, 6, 4, 3, 1}))
+}
+
+func test45() {
+	fmt.Println(jump_game_ii.Jump([]int{2, 3, 1, 1, 4}))
+	fmt.Println(jump_game_ii.Jump([]int{2, 3, 0, 1, 4}))
+}
+
+func test2931() {
+	fmt.Println(maximum_spending_after_buying_items.MaxSpending([][]int{{8, 5, 2}, {6, 4, 1}, {9, 7, 3}}))
+	fmt.Println(maximum_spending_after_buying_items.MaxSpending([][]int{{10, 8, 6, 4, 2}, {9, 7, 5, 3, 2}}))
+}
+
+func test11() {
+	fmt.Println(container_with_most_water.MaxArea([]int{1, 8, 6, 2, 5, 4, 8, 3, 7}))
+	fmt.Println(container_with_most_water.MaxArea([]int{1, 1}))
+}
+
+func test2717() {
+	fmt.Println(semi_ordered_permutation.SemiOrderedPermutation([]int{2, 1, 4, 3}))
+	fmt.Println(semi_ordered_permutation.SemiOrderedPermutation([]int{2, 4, 1, 3}))
+	fmt.Println(semi_ordered_permutation.SemiOrderedPermutation([]int{1, 3, 4, 2, 5}))
+}
+
+func test55() {
+	fmt.Println(jump_game.CanJump([]int{2, 3, 1, 1, 4}))
+	fmt.Println(jump_game.CanJump([]int{3, 2, 1, 0, 4}))
+	fmt.Println(jump_game.CanJump([]int{1}))
+	fmt.Println(jump_game.CanJump([]int{0}))
+	fmt.Println(jump_game.CanJump([]int{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}))
+}
+
+func test935() {
+	//fmt.Println(knight_dialer.KnightDialer(1))
+	//fmt.Println(knight_dialer.KnightDialer(2))
+	fmt.Println(knight_dialer.KnightDialer(3131))
+}
+
+func test3001() {
+	fmt.Println(minimum_moves_to_capture_the_queen.MinMovesToCaptureTheQueen(1, 1, 8, 8, 2, 3))
+	fmt.Println(minimum_moves_to_capture_the_queen.MinMovesToCaptureTheQueen(5, 3, 3, 4, 5, 2))
+	fmt.Println(minimum_moves_to_capture_the_queen.MinMovesToCaptureTheQueen(1, 1, 1, 2, 1, 3))
+	fmt.Println(minimum_moves_to_capture_the_queen.MinMovesToCaptureTheQueen(1, 2, 1, 1, 1, 3))
+	fmt.Println(minimum_moves_to_capture_the_queen.MinMovesToCaptureTheQueen(2, 2, 1, 1, 4, 4))
+}
+
+func test3244() {
+	fmt.Println(shortest_distance_after_road_addition_queries_ii.ShortestDistanceAfterQueries(5, [][]int{{2, 4}, {0, 2}, {0, 4}}))
+	fmt.Println(shortest_distance_after_road_addition_queries_ii.ShortestDistanceAfterQueries(4, [][]int{{0, 3}, {0, 2}}))
+	fmt.Println(shortest_distance_after_road_addition_queries_ii.ShortestDistanceAfterQueries(100, [][]int{{0, 1}, {0, 2}, {0, 3}, {0, 4}, {0, 5}, {5, 99}, {0, 99}}))
+}
 func test3239() {
 	fmt.Println(minimum_number_of_flips_to_make_binary_grid_palindromic_i.MinFlips([][]int{{1, 0, 0}, {0, 0, 0}, {0, 0, 1}}))
 	fmt.Println(minimum_number_of_flips_to_make_binary_grid_palindromic_i.MinFlips([][]int{{0, 1}, {0, 1}, {0, 0}}))
