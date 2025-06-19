@@ -8,13 +8,22 @@ import (
 	container_with_most_water "leetcode/container-with-most-water"
 	count_increasing_quadruplets "leetcode/count-increasing-quadruplets"
 	count_pairs_that_form_a_complete_day_i "leetcode/count-pairs-that-form-a-complete-day-i"
+	count_prefixes_of_a_given_string "leetcode/count-prefixes-of-a-given-string"
+	count_substrings_that_can_be_rearranged_to_contain_a_string_i "leetcode/count-substrings-that-can-be-rearranged-to-contain-a-string-i"
+	count_the_hidden_sequences "leetcode/count-the-hidden-sequences"
+	design_an_ordered_stream "leetcode/design-an-ordered-stream"
+	design_browser_history "leetcode/design-browser-history"
 	destination_city "leetcode/destination-city"
 	final_array_state_after_k_multiplication_operations_i "leetcode/final-array-state-after-k-multiplication-operations-i"
+	find_closest_number_to_zero "leetcode/find-closest-number-to-zero"
+	find_minimum_time_to_reach_last_room_i "leetcode/find-minimum-time-to-reach-last-room-i"
 	find_subarray_with_bitwise_or_closest_to_k "leetcode/find-subarray-with-bitwise-or-closest-to-k"
 	find_the_maximum_length_of_a_good_subsequence_i "leetcode/find-the-maximum-length-of-a-good-subsequence-i"
 	find_the_number_of_good_pairs_i "leetcode/find-the-number-of-good-pairs-i"
 	find_the_number_of_good_pairs_ii "leetcode/find-the-number-of-good-pairs-ii"
+	gas_station "leetcode/gas-station"
 	happy_students "leetcode/happy-students"
+	interleaving_string "leetcode/interleaving-string"
 	jump_game "leetcode/jump-game"
 	jump_game_ii "leetcode/jump-game-ii"
 	knight_dialer "leetcode/knight-dialer"
@@ -22,29 +31,189 @@ import (
 	longest_palindromic_substring "leetcode/longest-palindromic-substring"
 	longest_substring_without_repeating_characters "leetcode/longest-substring-without-repeating-characters"
 	maximize_the_confusion_of_an_exam "leetcode/maximize-the-confusion-of-an-exam"
+	maximum_consecutive_floors_without_special_floors "leetcode/maximum-consecutive-floors-without-special-floors"
 	maximum_spending_after_buying_items "leetcode/maximum-spending-after-buying-items"
 	maximum_strength_of_a_group "leetcode/maximum-strength-of-a-group"
+	maximum_value_of_k_coins_from_piles "leetcode/maximum-value-of-k-coins-from-piles"
 	minimum_array_end "leetcode/minimum-array-end"
 	minimum_cost_to_cut_a_stick "leetcode/minimum-cost-to-cut-a-stick"
 	minimum_moves_to_capture_the_queen "leetcode/minimum-moves-to-capture-the-queen"
 	minimum_number_of_flips_to_make_binary_grid_palindromic_i "leetcode/minimum-number-of-flips-to-make-binary-grid-palindromic-i"
+	minimum_operations_to_exceed_threshold_value_i "leetcode/minimum-operations-to-exceed-threshold-value-i"
+	minimum_operations_to_exceed_threshold_value_ii "leetcode/minimum-operations-to-exceed-threshold-value-ii"
+	number_of_changing_keys "leetcode/number-of-changing-keys"
+	number_of_ways_to_split_array "leetcode/number-of-ways-to-split-array"
 	palindrome_number "leetcode/palindrome-number"
+	palindrome_partitioning "leetcode/palindrome-partitioning"
+	palindrome_partitioning_ii "leetcode/palindrome-partitioning-ii"
+	partition_equal_subset_sum "leetcode/partition-equal-subset-sum"
+	remove_duplicate_letters "leetcode/remove-duplicate-letters"
 	reverse_integer "leetcode/reverse-integer"
 	seat_reservation_manager "leetcode/seat-reservation-manager"
 	semi_ordered_permutation "leetcode/semi-ordered-permutation"
 	shortest_distance_after_road_addition_queries_ii "leetcode/shortest-distance-after-road-addition-queries-ii"
+	shortest_subarray_with_or_at_least_k_i "leetcode/shortest-subarray-with-or-at-least-k-i"
 	smallest_range_i "leetcode/smallest-range-i"
 	smallest_range_ii "leetcode/smallest-range-ii"
 	string_to_integer_atoi "leetcode/string-to-integer-atoi"
 	the_latest_time_to_catch_a_bus "leetcode/the-latest-time-to-catch-a-bus"
 	time_needed_to_buy_tickets "leetcode/time-needed-to-buy-tickets"
+	trapping_rain_water "leetcode/trapping-rain-water"
 	two_sum "leetcode/two-sum"
 	zigzag_conversion "leetcode/zigzag-conversion"
 	"math"
 )
 
 func main() {
-	test3264()
+	test3341()
+}
+
+func test3341() {
+	//fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{0, 4}, {4, 4}}))
+	//fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{0, 0, 0}, {0, 0, 0}}))
+	//fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{0, 1}, {1, 2}}))
+	//fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{0, 88, 10}, {89, 41, 69}, {63, 39, 35}}))
+	fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{94, 79, 62, 27, 69, 84}, {6, 32, 11, 82, 42, 30}}))
+
+}
+
+func test2145() {
+	fmt.Println(count_the_hidden_sequences.NumberOfArrays([]int{1, -3, 4}, 1, 6))
+	fmt.Println(count_the_hidden_sequences.NumberOfArrays([]int{3, -4, 5, 1, -2}, -4, 5))
+}
+
+func test416() {
+	fmt.Println(partition_equal_subset_sum.CanPartition([]int{1, 5, 11, 5}))
+	fmt.Println(partition_equal_subset_sum.CanPartition([]int{1, 2, 3, 5}))
+
+}
+
+func test132() {
+	fmt.Println(palindrome_partitioning_ii.MinCut("aab"))
+	fmt.Println(palindrome_partitioning_ii.MinCut("a"))
+	fmt.Println(palindrome_partitioning_ii.MinCut("ab"))
+}
+
+func test2255() {
+	fmt.Println(count_prefixes_of_a_given_string.CountPrefixes([]string{"a", "b", "c", "ab", "bc", "abc"}, "abc"))
+	fmt.Println(count_prefixes_of_a_given_string.CountPrefixes([]string{"a", "a"}, "aa"))
+
+}
+func test131() {
+	fmt.Println(palindrome_partitioning.Partition("aab"))
+	fmt.Println(palindrome_partitioning.Partition("a"))
+}
+
+func test316() {
+	println(remove_duplicate_letters.RemoveDuplicateLetters("bcabc"))
+	println(remove_duplicate_letters.RemoveDuplicateLetters("cbacdcbc"))
+}
+
+func test1472() {
+	obj := design_browser_history.Constructor("https://www.1.com")
+	obj.Visit("https://2.com")
+	println(obj.Back(1))
+	println(obj.Forward(1))
+	println("--")
+	obj.Visit("https://3.com")
+	println(obj.Back(1))
+	obj.Visit("https://4.com")
+	println(obj.Back(1))
+	println(obj.Forward(1))
+
+	//obj.Visit("https://qq1.com")
+	//obj.Visit("https://qq2.com")
+	//obj.Visit("https://qq3.com")
+	//obj.Visit("https://qq4.com")
+	//obj.Visit("https://qq5.com")
+	//println(obj.Back(1))
+	//println(obj.Back(1))
+	//println(obj.Back(1))
+	//obj.Visit("https://qq6.com")
+	//println(obj.Back(1))
+	//println(obj.Forward(1))
+}
+
+func test42() {
+	println(trapping_rain_water.Trap([]int{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}))
+	println(trapping_rain_water.Trap([]int{4, 2, 0, 3, 2, 5}))
+}
+
+func test1656() {
+	o := design_an_ordered_stream.Constructor(5)
+	fmt.Println(o.Insert(3, "ccccc"))
+	fmt.Println(o.Insert(1, "aaaaa"))
+	fmt.Println(o.Insert(2, "bbbbb"))
+	fmt.Println(o.Insert(5, "eeeee"))
+	fmt.Println(o.Insert(4, "ddddd"))
+}
+
+func test2218() {
+	fmt.Println(maximum_value_of_k_coins_from_piles.NaxValueOfCoins([][]int{{1, 100, 3}, {7, 8, 9}}, 2))
+	fmt.Println(maximum_value_of_k_coins_from_piles.NaxValueOfCoins([][]int{{100}, {100}, {100}, {100}, {100}, {100}, {1, 1, 1, 1, 1, 1, 700}}, 7))
+
+}
+
+func test134() {
+	fmt.Println(gas_station.CanCompleteCircuit([]int{1, 2, 3, 4, 5}, []int{3, 4, 5, 1, 2}))
+	fmt.Println(gas_station.CanCompleteCircuit([]int{2, 3, 4}, []int{3, 4, 3}))
+	fmt.Println(gas_station.CanCompleteCircuit([]int{2}, []int{3}))
+	fmt.Println(gas_station.CanCompleteCircuit([]int{3}, []int{2}))
+}
+
+func test2239() {
+	fmt.Println(find_closest_number_to_zero.FindClosestNumber([]int{-4, -2, 1, 4, 8}))
+	fmt.Println(find_closest_number_to_zero.FindClosestNumber([]int{2, -1, 1}))
+	fmt.Println(find_closest_number_to_zero.FindClosestNumber([]int{2, 0, 1}))
+}
+
+func test3095() {
+	//fmt.Println(shortest_subarray_with_or_at_least_k_i.MinimumSubarrayLength([]int{1, 2, 3}, 2))
+	//fmt.Println(shortest_subarray_with_or_at_least_k_i.MinimumSubarrayLength([]int{2, 1, 8}, 10))
+	//fmt.Println(shortest_subarray_with_or_at_least_k_i.MinimumSubarrayLength([]int{1, 2}, 0))
+	fmt.Println(shortest_subarray_with_or_at_least_k_i.MinimumSubarrayLength([]int{1, 12, 2, 5}, 43))
+}
+
+func test3066() {
+	fmt.Println(minimum_operations_to_exceed_threshold_value_ii.MinOperations([]int{2, 11, 10, 1, 3}, 10))
+	fmt.Println(minimum_operations_to_exceed_threshold_value_ii.MinOperations([]int{1, 1, 2, 4, 9}, 20))
+}
+
+func test3065() {
+	fmt.Println(minimum_operations_to_exceed_threshold_value_i.MinOperations([]int{2, 11, 10, 1, 3}, 10))
+	fmt.Println(minimum_operations_to_exceed_threshold_value_i.MinOperations([]int{1, 1, 2, 4, 9}, 1))
+}
+
+func test2270() {
+	fmt.Println(number_of_ways_to_split_array.WaysToSplitArray([]int{10, 4, -8, 7}))
+	fmt.Println(number_of_ways_to_split_array.WaysToSplitArray([]int{2, 3, 1, 0}))
+
+}
+
+func test3298() {
+	fmt.Println(count_substrings_that_can_be_rearranged_to_contain_a_string_i.ValidSubstringCount("ab", "abc"))
+	fmt.Println(count_substrings_that_can_be_rearranged_to_contain_a_string_i.ValidSubstringCount("bcca", "abc"))
+	fmt.Println(count_substrings_that_can_be_rearranged_to_contain_a_string_i.ValidSubstringCount("abcabc", "abc"))
+	fmt.Println(count_substrings_that_can_be_rearranged_to_contain_a_string_i.ValidSubstringCount("abcabc", "aaabc"))
+}
+
+func test3019() {
+	fmt.Println(number_of_changing_keys.CountKeyChanges("aAbBcC"))
+	fmt.Println(number_of_changing_keys.CountKeyChanges("AaAaAaaA"))
+}
+
+func test2274() {
+	fmt.Println(maximum_consecutive_floors_without_special_floors.MaxConsecutive(2, 9, []int{4, 6}))
+	fmt.Println(maximum_consecutive_floors_without_special_floors.MaxConsecutive(6, 8, []int{7, 6, 8}))
+}
+
+func test97() {
+	fmt.Println(interleaving_string.IsInterleave("aabcc", "dbbca", "aadbbcbcac"))
+	fmt.Println(interleaving_string.IsInterleave("aabcc", "dbbca", "aadbbbaccc"))
+	fmt.Println(interleaving_string.IsInterleave("", "", ""))
+	fmt.Println(interleaving_string.IsInterleave("abc", "", "abc"))
+	fmt.Println(interleaving_string.IsInterleave("", "abc", "abc"))
+	fmt.Println(interleaving_string.IsInterleave("db", "b", "cbb"))
 }
 
 func test3264() {
