@@ -15,6 +15,7 @@ import (
 	design_browser_history "leetcode/design-browser-history"
 	destination_city "leetcode/destination-city"
 	final_array_state_after_k_multiplication_operations_i "leetcode/final-array-state-after-k-multiplication-operations-i"
+	find_all_k_distant_indices_in_an_array "leetcode/find-all-k-distant-indices-in-an-array"
 	find_closest_number_to_zero "leetcode/find-closest-number-to-zero"
 	find_minimum_time_to_reach_last_room_i "leetcode/find-minimum-time-to-reach-last-room-i"
 	find_subarray_with_bitwise_or_closest_to_k "leetcode/find-subarray-with-bitwise-or-closest-to-k"
@@ -46,6 +47,7 @@ import (
 	palindrome_number "leetcode/palindrome-number"
 	palindrome_partitioning "leetcode/palindrome-partitioning"
 	palindrome_partitioning_ii "leetcode/palindrome-partitioning-ii"
+	partition_array_such_that_maximum_difference_is_k "leetcode/partition-array-such-that-maximum-difference-is-k"
 	partition_equal_subset_sum "leetcode/partition-equal-subset-sum"
 	remove_duplicate_letters "leetcode/remove-duplicate-letters"
 	reverse_integer "leetcode/reverse-integer"
@@ -65,7 +67,20 @@ import (
 )
 
 func main() {
-	test3341()
+	test2200()
+}
+
+func test2200() {
+	fmt.Println(find_all_k_distant_indices_in_an_array.FindKDistantIndices([]int{3, 4, 9, 1, 3, 9, 5}, 9, 1))
+	fmt.Println(find_all_k_distant_indices_in_an_array.FindKDistantIndices([]int{2, 2, 2, 2, 2}, 2, 2))
+}
+
+func test2294() {
+	fmt.Println(partition_array_such_that_maximum_difference_is_k.PartitionArray([]int{3, 6, 1, 2, 5}, 2))
+	fmt.Println(partition_array_such_that_maximum_difference_is_k.PartitionArray([]int{1, 2, 3}, 1))
+	fmt.Println(partition_array_such_that_maximum_difference_is_k.PartitionArray([]int{2, 2, 4, 5}, 0))
+	fmt.Println(partition_array_such_that_maximum_difference_is_k.PartitionArray([]int{1}, 1))
+	fmt.Println(partition_array_such_that_maximum_difference_is_k.PartitionArray([]int{1, 1}, 0))
 }
 
 func test3341() {
