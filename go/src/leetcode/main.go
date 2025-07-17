@@ -20,8 +20,10 @@ import (
 	find_minimum_time_to_reach_last_room_i "leetcode/find-minimum-time-to-reach-last-room-i"
 	find_subarray_with_bitwise_or_closest_to_k "leetcode/find-subarray-with-bitwise-or-closest-to-k"
 	find_the_maximum_length_of_a_good_subsequence_i "leetcode/find-the-maximum-length-of-a-good-subsequence-i"
+	find_the_maximum_length_of_valid_subsequence_i "leetcode/find-the-maximum-length-of-valid-subsequence-i"
 	find_the_number_of_good_pairs_i "leetcode/find-the-number-of-good-pairs-i"
 	find_the_number_of_good_pairs_ii "leetcode/find-the-number-of-good-pairs-ii"
+	find_the_original_typed_string_i "leetcode/find-the-original-typed-string-i"
 	gas_station "leetcode/gas-station"
 	happy_students "leetcode/happy-students"
 	interleaving_string "leetcode/interleaving-string"
@@ -49,6 +51,7 @@ import (
 	palindrome_partitioning_ii "leetcode/palindrome-partitioning-ii"
 	partition_array_such_that_maximum_difference_is_k "leetcode/partition-array-such-that-maximum-difference-is-k"
 	partition_equal_subset_sum "leetcode/partition-equal-subset-sum"
+	pascals_triangle_ii "leetcode/pascals-triangle-ii"
 	remove_duplicate_letters "leetcode/remove-duplicate-letters"
 	reverse_integer "leetcode/reverse-integer"
 	seat_reservation_manager "leetcode/seat-reservation-manager"
@@ -61,13 +64,45 @@ import (
 	the_latest_time_to_catch_a_bus "leetcode/the-latest-time-to-catch-a-bus"
 	time_needed_to_buy_tickets "leetcode/time-needed-to-buy-tickets"
 	trapping_rain_water "leetcode/trapping-rain-water"
+	"leetcode/triangle"
 	two_sum "leetcode/two-sum"
+	valid_word "leetcode/valid-word"
 	zigzag_conversion "leetcode/zigzag-conversion"
 	"math"
 )
 
 func main() {
-	test2200()
+	test3136()
+}
+
+func test3136() {
+	fmt.Println(valid_word.IsValid("234Adas"))
+	fmt.Println(valid_word.IsValid("b3"))
+	fmt.Println(valid_word.IsValid("a3$e"))
+	fmt.Println(valid_word.IsValid("UuE6"))
+
+}
+
+func test3201() {
+	fmt.Println(find_the_maximum_length_of_valid_subsequence_i.MaximumLength([]int{1, 2, 3, 4}))
+	fmt.Println(find_the_maximum_length_of_valid_subsequence_i.MaximumLength([]int{1, 2, 1, 1, 2, 1, 2}))
+	fmt.Println(find_the_maximum_length_of_valid_subsequence_i.MaximumLength([]int{1, 2, 1, 1, 2, 1, 2}))
+}
+
+func test120() {
+	fmt.Println(triangle.MinimumTotal([][]int{{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}}))
+}
+
+func test119() {
+	for i := 0; i < 30; i++ {
+		fmt.Println(pascals_triangle_ii.GetRow(i))
+	}
+}
+
+func test3330() {
+	fmt.Println(find_the_original_typed_string_i.PossibleStringCount("abbcccc"))
+	fmt.Println(find_the_original_typed_string_i.PossibleStringCount("abcd"))
+	fmt.Println(find_the_original_typed_string_i.PossibleStringCount("aaaa"))
 }
 
 func test2200() {
