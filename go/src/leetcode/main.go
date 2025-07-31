@@ -7,10 +7,12 @@ import (
 	clear_digits "leetcode/clear-digits"
 	container_with_most_water "leetcode/container-with-most-water"
 	count_increasing_quadruplets "leetcode/count-increasing-quadruplets"
+	count_number_of_maximum_bitwise_or_subsets "leetcode/count-number-of-maximum-bitwise-or-subsets"
 	count_pairs_that_form_a_complete_day_i "leetcode/count-pairs-that-form-a-complete-day-i"
 	count_prefixes_of_a_given_string "leetcode/count-prefixes-of-a-given-string"
 	count_substrings_that_can_be_rearranged_to_contain_a_string_i "leetcode/count-substrings-that-can-be-rearranged-to-contain-a-string-i"
 	count_the_hidden_sequences "leetcode/count-the-hidden-sequences"
+	delete_characters_to_make_fancy_string "leetcode/delete-characters-to-make-fancy-string"
 	design_an_ordered_stream "leetcode/design-an-ordered-stream"
 	design_browser_history "leetcode/design-browser-history"
 	destination_city "leetcode/destination-city"
@@ -21,6 +23,7 @@ import (
 	find_subarray_with_bitwise_or_closest_to_k "leetcode/find-subarray-with-bitwise-or-closest-to-k"
 	find_the_maximum_length_of_a_good_subsequence_i "leetcode/find-the-maximum-length-of-a-good-subsequence-i"
 	find_the_maximum_length_of_valid_subsequence_i "leetcode/find-the-maximum-length-of-valid-subsequence-i"
+	find_the_maximum_length_of_valid_subsequence_ii "leetcode/find-the-maximum-length-of-valid-subsequence-ii"
 	find_the_number_of_good_pairs_i "leetcode/find-the-number-of-good-pairs-i"
 	find_the_number_of_good_pairs_ii "leetcode/find-the-number-of-good-pairs-ii"
 	find_the_original_typed_string_i "leetcode/find-the-original-typed-string-i"
@@ -32,6 +35,7 @@ import (
 	knight_dialer "leetcode/knight-dialer"
 	length_of_the_longest_alphabetical_continuous_substring "leetcode/length-of-the-longest-alphabetical-continuous-substring"
 	longest_palindromic_substring "leetcode/longest-palindromic-substring"
+	longest_subarray_with_maximum_bitwise_and "leetcode/longest-subarray-with-maximum-bitwise-and"
 	longest_substring_without_repeating_characters "leetcode/longest-substring-without-repeating-characters"
 	maximize_the_confusion_of_an_exam "leetcode/maximize-the-confusion-of-an-exam"
 	maximum_consecutive_floors_without_special_floors "leetcode/maximum-consecutive-floors-without-special-floors"
@@ -60,6 +64,7 @@ import (
 	shortest_subarray_with_or_at_least_k_i "leetcode/shortest-subarray-with-or-at-least-k-i"
 	smallest_range_i "leetcode/smallest-range-i"
 	smallest_range_ii "leetcode/smallest-range-ii"
+	smallest_subarrays_with_maximum_bitwise_or "leetcode/smallest-subarrays-with-maximum-bitwise-or"
 	string_to_integer_atoi "leetcode/string-to-integer-atoi"
 	the_latest_time_to_catch_a_bus "leetcode/the-latest-time-to-catch-a-bus"
 	time_needed_to_buy_tickets "leetcode/time-needed-to-buy-tickets"
@@ -67,12 +72,56 @@ import (
 	"leetcode/triangle"
 	two_sum "leetcode/two-sum"
 	valid_word "leetcode/valid-word"
+	word_break "leetcode/word-break"
 	zigzag_conversion "leetcode/zigzag-conversion"
 	"math"
 )
 
 func main() {
-	test3136()
+	test139()
+}
+
+func test139() {
+	fmt.Println(word_break.WordBreak("a", []string{"a"}))
+	fmt.Println(word_break.WordBreak("aa", []string{"a", "aa"}))
+	fmt.Println(word_break.WordBreak("aba", []string{"ab", "a"}))
+	fmt.Println(word_break.WordBreak("leetcode", []string{"leet", "code"}))
+	fmt.Println(word_break.WordBreak("applepenapple", []string{"apple", "pen"}))
+	fmt.Println(word_break.WordBreak("catsandog", []string{"cats", "dog", "sand", "and", "cat"}))
+	fmt.Println(word_break.WordBreak("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab", []string{"a", "aa", "aaa", "aaaa", "aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa", "aaaaaaaaa", "aaaaaaaaaa"}))
+}
+
+func test120() {
+	fmt.Println(triangle.MinimumTotal([][]int{{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}}))
+}
+
+func test2419() {
+	fmt.Println(longest_subarray_with_maximum_bitwise_and.LongestSubarray([]int{1, 2, 3, 3, 2, 2}))
+	fmt.Println(longest_subarray_with_maximum_bitwise_and.LongestSubarray([]int{1, 2, 3, 4}))
+
+}
+
+func test2411() {
+	fmt.Println(smallest_subarrays_with_maximum_bitwise_or.SmallestSubarrays([]int{1, 0, 2, 1, 3}))
+	fmt.Println(smallest_subarrays_with_maximum_bitwise_or.SmallestSubarrays([]int{1, 2}))
+
+}
+
+func test2044() {
+	fmt.Println(count_number_of_maximum_bitwise_or_subsets.CountMaxOrSubsets([]int{3, 1}))
+	fmt.Println(count_number_of_maximum_bitwise_or_subsets.CountMaxOrSubsets([]int{2, 2, 2}))
+	fmt.Println(count_number_of_maximum_bitwise_or_subsets.CountMaxOrSubsets([]int{3, 2, 1, 5}))
+}
+
+func test1957() {
+	fmt.Println(delete_characters_to_make_fancy_string.MakeFancyString("leeetcode"))
+	fmt.Println(delete_characters_to_make_fancy_string.MakeFancyString("aaabaaaa"))
+	fmt.Println(delete_characters_to_make_fancy_string.MakeFancyString("aab"))
+}
+
+func test3202() {
+	fmt.Println(find_the_maximum_length_of_valid_subsequence_ii.MaximumLength([]int{1, 2, 3, 4, 5}, 2))
+	fmt.Println(find_the_maximum_length_of_valid_subsequence_ii.MaximumLength([]int{1, 4, 2, 3, 1, 4}, 3))
 }
 
 func test3136() {
@@ -80,17 +129,12 @@ func test3136() {
 	fmt.Println(valid_word.IsValid("b3"))
 	fmt.Println(valid_word.IsValid("a3$e"))
 	fmt.Println(valid_word.IsValid("UuE6"))
-
 }
 
 func test3201() {
 	fmt.Println(find_the_maximum_length_of_valid_subsequence_i.MaximumLength([]int{1, 2, 3, 4}))
 	fmt.Println(find_the_maximum_length_of_valid_subsequence_i.MaximumLength([]int{1, 2, 1, 1, 2, 1, 2}))
 	fmt.Println(find_the_maximum_length_of_valid_subsequence_i.MaximumLength([]int{1, 2, 1, 1, 2, 1, 2}))
-}
-
-func test120() {
-	fmt.Println(triangle.MinimumTotal([][]int{{2}, {3, 4}, {6, 5, 7}, {4, 1, 8, 3}}))
 }
 
 func test119() {
@@ -124,7 +168,6 @@ func test3341() {
 	//fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{0, 1}, {1, 2}}))
 	//fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{0, 88, 10}, {89, 41, 69}, {63, 39, 35}}))
 	fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{94, 79, 62, 27, 69, 84}, {6, 32, 11, 82, 42, 30}}))
-
 }
 
 func test2145() {
@@ -135,7 +178,6 @@ func test2145() {
 func test416() {
 	fmt.Println(partition_equal_subset_sum.CanPartition([]int{1, 5, 11, 5}))
 	fmt.Println(partition_equal_subset_sum.CanPartition([]int{1, 2, 3, 5}))
-
 }
 
 func test132() {
@@ -147,8 +189,8 @@ func test132() {
 func test2255() {
 	fmt.Println(count_prefixes_of_a_given_string.CountPrefixes([]string{"a", "b", "c", "ab", "bc", "abc"}, "abc"))
 	fmt.Println(count_prefixes_of_a_given_string.CountPrefixes([]string{"a", "a"}, "aa"))
-
 }
+
 func test131() {
 	fmt.Println(palindrome_partitioning.Partition("aab"))
 	fmt.Println(palindrome_partitioning.Partition("a"))
@@ -201,7 +243,6 @@ func test1656() {
 func test2218() {
 	fmt.Println(maximum_value_of_k_coins_from_piles.NaxValueOfCoins([][]int{{1, 100, 3}, {7, 8, 9}}, 2))
 	fmt.Println(maximum_value_of_k_coins_from_piles.NaxValueOfCoins([][]int{{100}, {100}, {100}, {100}, {100}, {100}, {1, 1, 1, 1, 1, 1, 700}}, 7))
-
 }
 
 func test134() {
@@ -237,7 +278,6 @@ func test3065() {
 func test2270() {
 	fmt.Println(number_of_ways_to_split_array.WaysToSplitArray([]int{10, 4, -8, 7}))
 	fmt.Println(number_of_ways_to_split_array.WaysToSplitArray([]int{2, 3, 1, 0}))
-
 }
 
 func test3298() {
@@ -473,7 +513,6 @@ func test2680() {
 	fmt.Println(happy_students.CountWays([]int{0, 1, 2}))
 	fmt.Println(happy_students.CountWays([]int{0, 3, 2, 2}))
 	fmt.Println(happy_students.CountWays([]int{6, 0, 3, 3, 6, 7, 2, 7}))
-
 }
 
 func test6() {
