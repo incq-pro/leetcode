@@ -5,11 +5,13 @@ import (
 	best_time_to_buy_and_sell_stock "leetcode/best-time-to-buy-and-sell-stock"
 	best_time_to_buy_and_sell_stock_ii "leetcode/best-time-to-buy-and-sell-stock-ii"
 	clear_digits "leetcode/clear-digits"
+	construct_binary_tree_from_preorder_and_inorder_traversal "leetcode/construct-binary-tree-from-preorder-and-inorder-traversal"
 	container_with_most_water "leetcode/container-with-most-water"
 	count_increasing_quadruplets "leetcode/count-increasing-quadruplets"
 	count_number_of_maximum_bitwise_or_subsets "leetcode/count-number-of-maximum-bitwise-or-subsets"
 	count_pairs_that_form_a_complete_day_i "leetcode/count-pairs-that-form-a-complete-day-i"
 	count_prefixes_of_a_given_string "leetcode/count-prefixes-of-a-given-string"
+	count_square_submatrices_with_all_ones "leetcode/count-square-submatrices-with-all-ones"
 	count_substrings_that_can_be_rearranged_to_contain_a_string_i "leetcode/count-substrings-that-can-be-rearranged-to-contain-a-string-i"
 	count_the_hidden_sequences "leetcode/count-the-hidden-sequences"
 	delete_characters_to_make_fancy_string "leetcode/delete-characters-to-make-fancy-string"
@@ -27,8 +29,12 @@ import (
 	find_the_number_of_good_pairs_i "leetcode/find-the-number-of-good-pairs-i"
 	find_the_number_of_good_pairs_ii "leetcode/find-the-number-of-good-pairs-ii"
 	find_the_original_typed_string_i "leetcode/find-the-original-typed-string-i"
+	fruit_into_baskets "leetcode/fruit-into-baskets"
+	fruits_into_baskets_ii "leetcode/fruits-into-baskets-ii"
+	fruits_into_baskets_iii "leetcode/fruits-into-baskets-iii"
 	gas_station "leetcode/gas-station"
 	happy_students "leetcode/happy-students"
+	increasing_triplet_subsequence "leetcode/increasing-triplet-subsequence"
 	interleaving_string "leetcode/interleaving-string"
 	jump_game "leetcode/jump-game"
 	jump_game_ii "leetcode/jump-game-ii"
@@ -50,12 +56,14 @@ import (
 	minimum_operations_to_exceed_threshold_value_ii "leetcode/minimum-operations-to-exceed-threshold-value-ii"
 	number_of_changing_keys "leetcode/number-of-changing-keys"
 	number_of_ways_to_split_array "leetcode/number-of-ways-to-split-array"
+	number_of_zero_filled_subarrays "leetcode/number-of-zero-filled-subarrays"
 	palindrome_number "leetcode/palindrome-number"
 	palindrome_partitioning "leetcode/palindrome-partitioning"
 	palindrome_partitioning_ii "leetcode/palindrome-partitioning-ii"
 	partition_array_such_that_maximum_difference_is_k "leetcode/partition-array-such-that-maximum-difference-is-k"
 	partition_equal_subset_sum "leetcode/partition-equal-subset-sum"
 	pascals_triangle_ii "leetcode/pascals-triangle-ii"
+	range_product_queries_of_powers "leetcode/range-product-queries-of-powers"
 	remove_duplicate_letters "leetcode/remove-duplicate-letters"
 	reverse_integer "leetcode/reverse-integer"
 	seat_reservation_manager "leetcode/seat-reservation-manager"
@@ -65,6 +73,7 @@ import (
 	smallest_range_i "leetcode/smallest-range-i"
 	smallest_range_ii "leetcode/smallest-range-ii"
 	smallest_subarrays_with_maximum_bitwise_or "leetcode/smallest-subarrays-with-maximum-bitwise-or"
+	soup_servings "leetcode/soup-servings"
 	string_to_integer_atoi "leetcode/string-to-integer-atoi"
 	the_latest_time_to_catch_a_bus "leetcode/the-latest-time-to-catch-a-bus"
 	time_needed_to_buy_tickets "leetcode/time-needed-to-buy-tickets"
@@ -72,13 +81,73 @@ import (
 	"leetcode/triangle"
 	two_sum "leetcode/two-sum"
 	valid_word "leetcode/valid-word"
+	ways_to_express_an_integer_as_sum_of_powers "leetcode/ways-to-express-an-integer-as-sum-of-powers"
 	word_break "leetcode/word-break"
 	zigzag_conversion "leetcode/zigzag-conversion"
 	"math"
 )
 
 func main() {
-	test139()
+	test1277()
+}
+
+func test1277() {
+	fmt.Println(count_square_submatrices_with_all_ones.CountSquares([][]int{{0, 1, 1, 1}, {1, 1, 1, 1}, {0, 1, 1, 1}}))
+	fmt.Println(count_square_submatrices_with_all_ones.CountSquares([][]int{{1, 0, 1}, {1, 1, 0}, {1, 1, 0}}))
+
+}
+
+func test2348() {
+	fmt.Println(number_of_zero_filled_subarrays.ZeroFilledSubarray([]int{1, 3, 0, 0, 2, 0, 0, 4}))
+	fmt.Println(number_of_zero_filled_subarrays.ZeroFilledSubarray([]int{0, 0, 0, 2, 0, 0}))
+	fmt.Println(number_of_zero_filled_subarrays.ZeroFilledSubarray([]int{2, 10, 2019}))
+
+}
+
+func test2787() {
+	fmt.Println(ways_to_express_an_integer_as_sum_of_powers.NumberOfWays(10, 2))
+	fmt.Println(ways_to_express_an_integer_as_sum_of_powers.NumberOfWays(4, 1))
+}
+
+func test2438() {
+	fmt.Println(range_product_queries_of_powers.ProductQueries(15, [][]int{{0, 1}, {2, 2}, {0, 3}}))
+	fmt.Println(range_product_queries_of_powers.ProductQueries(2, [][]int{{0, 0}}))
+}
+
+func test808() {
+	fmt.Println(soup_servings.SoupServings(50))
+	fmt.Println(soup_servings.SoupServings(100))
+}
+
+func test105() {
+	fmt.Println(construct_binary_tree_from_preorder_and_inorder_traversal.BuildTree([]int{3, 9, 20, 15, 7}, []int{9, 3, 15, 20, 7}))
+
+}
+
+func test3479() {
+	fmt.Println(fruits_into_baskets_iii.NumOfUnplacedFruits([]int{4, 2, 5}, []int{3, 5, 4}))
+	fmt.Println(fruits_into_baskets_iii.NumOfUnplacedFruits([]int{3, 6, 1}, []int{6, 4, 7}))
+}
+
+func test334() {
+	fmt.Println(increasing_triplet_subsequence.IncreasingTriplet([]int{10, 10, 10, 5, 6, 7}))
+	fmt.Println(increasing_triplet_subsequence.IncreasingTriplet([]int{1, 2, 3, 4, 5}))
+	fmt.Println(increasing_triplet_subsequence.IncreasingTriplet([]int{5, 4, 3, 2, 1}))
+	fmt.Println(increasing_triplet_subsequence.IncreasingTriplet([]int{2, 1, 5, 0, 4, 6}))
+	fmt.Println(increasing_triplet_subsequence.IncreasingTriplet([]int{9, 10, 1, 5, 3, 4}))
+	fmt.Println(increasing_triplet_subsequence.IncreasingTriplet([]int{1, 5, 0, 4, 1, 3}))
+}
+
+func test3477() {
+	fmt.Println(fruits_into_baskets_ii.NumOfUnplacedFruits([]int{4, 2, 5}, []int{3, 5, 4}))
+	fmt.Println(fruits_into_baskets_ii.NumOfUnplacedFruits([]int{3, 6, 1}, []int{6, 4, 7}))
+}
+
+func test904() {
+	fmt.Println(fruit_into_baskets.TotalFruit([]int{1, 2, 1}))
+	fmt.Println(fruit_into_baskets.TotalFruit([]int{0, 1, 2, 2}))
+	fmt.Println(fruit_into_baskets.TotalFruit([]int{1, 2, 3, 2, 2}))
+	fmt.Println(fruit_into_baskets.TotalFruit([]int{3, 3, 3, 1, 2, 1, 1, 2, 3, 3, 4}))
 }
 
 func test139() {
