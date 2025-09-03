@@ -12,6 +12,7 @@ import (
 	count_pairs_that_form_a_complete_day_i "leetcode/count-pairs-that-form-a-complete-day-i"
 	count_prefixes_of_a_given_string "leetcode/count-prefixes-of-a-given-string"
 	count_square_submatrices_with_all_ones "leetcode/count-square-submatrices-with-all-ones"
+	count_submatrices_with_all_ones "leetcode/count-submatrices-with-all-ones"
 	count_substrings_that_can_be_rearranged_to_contain_a_string_i "leetcode/count-substrings-that-can-be-rearranged-to-contain-a-string-i"
 	count_the_hidden_sequences "leetcode/count-the-hidden-sequences"
 	delete_characters_to_make_fancy_string "leetcode/delete-characters-to-make-fancy-string"
@@ -26,14 +27,18 @@ import (
 	find_the_maximum_length_of_a_good_subsequence_i "leetcode/find-the-maximum-length-of-a-good-subsequence-i"
 	find_the_maximum_length_of_valid_subsequence_i "leetcode/find-the-maximum-length-of-valid-subsequence-i"
 	find_the_maximum_length_of_valid_subsequence_ii "leetcode/find-the-maximum-length-of-valid-subsequence-ii"
+	find_the_minimum_area_to_cover_all_ones_i "leetcode/find-the-minimum-area-to-cover-all-ones-i"
 	find_the_number_of_good_pairs_i "leetcode/find-the-number-of-good-pairs-i"
 	find_the_number_of_good_pairs_ii "leetcode/find-the-number-of-good-pairs-ii"
+	find_the_number_of_ways_to_place_people_i "leetcode/find-the-number-of-ways-to-place-people-i"
+	find_the_number_of_ways_to_place_people_ii "leetcode/find-the-number-of-ways-to-place-people-ii"
 	find_the_original_typed_string_i "leetcode/find-the-original-typed-string-i"
 	fruit_into_baskets "leetcode/fruit-into-baskets"
 	fruits_into_baskets_ii "leetcode/fruits-into-baskets-ii"
 	fruits_into_baskets_iii "leetcode/fruits-into-baskets-iii"
 	gas_station "leetcode/gas-station"
 	happy_students "leetcode/happy-students"
+	house_robber_ii "leetcode/house-robber-ii"
 	increasing_triplet_subsequence "leetcode/increasing-triplet-subsequence"
 	interleaving_string "leetcode/interleaving-string"
 	jump_game "leetcode/jump-game"
@@ -43,7 +48,9 @@ import (
 	longest_palindromic_substring "leetcode/longest-palindromic-substring"
 	longest_subarray_with_maximum_bitwise_and "leetcode/longest-subarray-with-maximum-bitwise-and"
 	longest_substring_without_repeating_characters "leetcode/longest-substring-without-repeating-characters"
+	maximal_square "leetcode/maximal-square"
 	maximize_the_confusion_of_an_exam "leetcode/maximize-the-confusion-of-an-exam"
+	maximum_average_pass_ratio "leetcode/maximum-average-pass-ratio"
 	maximum_consecutive_floors_without_special_floors "leetcode/maximum-consecutive-floors-without-special-floors"
 	maximum_spending_after_buying_items "leetcode/maximum-spending-after-buying-items"
 	maximum_strength_of_a_group "leetcode/maximum-strength-of-a-group"
@@ -88,7 +95,48 @@ import (
 )
 
 func main() {
-	test1277()
+	test3027()
+}
+
+func test3027() {
+	fmt.Println(find_the_number_of_ways_to_place_people_ii.NumberOfPairs([][]int{{1, 1}, {2, 2}, {3, 3}}))
+	fmt.Println(find_the_number_of_ways_to_place_people_ii.NumberOfPairs([][]int{{6, 2}, {4, 4}, {2, 6}}))
+	fmt.Println(find_the_number_of_ways_to_place_people_ii.NumberOfPairs([][]int{{3, 1}, {1, 3}, {1, 1}}))
+	fmt.Println(find_the_number_of_ways_to_place_people_ii.NumberOfPairs([][]int{{1, 1}, {1, 3}, {3, 1}, {3, 3}}))
+}
+
+func test221() {
+	fmt.Println(maximal_square.MaximalSquare([][]byte{{'1', '0', '1', '0', '0'}, {'1', '0', '1', '1', '1'}, {'1', '1', '1', '1', '1'}, {'1', '0', '0', '1', '0'}}))
+	fmt.Println(maximal_square.MaximalSquare([][]byte{{'0', '1'}, {'1', '0'}}))
+	fmt.Println(maximal_square.MaximalSquare([][]byte{{'0'}}))
+}
+
+func test3025() {
+	fmt.Println(find_the_number_of_ways_to_place_people_i.NumberOfPairs([][]int{{1, 1}, {2, 2}, {3, 3}}))
+	fmt.Println(find_the_number_of_ways_to_place_people_i.NumberOfPairs([][]int{{6, 2}, {4, 4}, {2, 6}}))
+	fmt.Println(find_the_number_of_ways_to_place_people_i.NumberOfPairs([][]int{{3, 1}, {1, 3}, {1, 1}}))
+	fmt.Println(find_the_number_of_ways_to_place_people_i.NumberOfPairs([][]int{{0, 0}, {0, 3}}))
+}
+
+func test213() {
+	fmt.Println(house_robber_ii.Rob([]int{2, 3, 2}))
+	fmt.Println(house_robber_ii.Rob([]int{1, 2, 3, 1}))
+	fmt.Println(house_robber_ii.Rob([]int{1, 2, 3}))
+}
+
+func test1792() {
+	fmt.Println(maximum_average_pass_ratio.MaxAverageRatio([][]int{{1, 2}, {3, 5}, {2, 2}}, 2))
+	fmt.Println(maximum_average_pass_ratio.MaxAverageRatio([][]int{{2, 4}, {3, 9}, {4, 5}, {2, 10}}, 4))
+}
+
+func test3195() {
+	fmt.Println(find_the_minimum_area_to_cover_all_ones_i.MinimumArea([][]int{{0, 1, 0}, {1, 0, 1}}))
+	fmt.Println(find_the_minimum_area_to_cover_all_ones_i.MinimumArea([][]int{{0, 0}, {1, 0}}))
+}
+
+func test1504() {
+	fmt.Println(count_submatrices_with_all_ones.NumSubMat([][]int{{1, 0, 1}, {1, 1, 0}, {1, 1, 0}}))
+	fmt.Println(count_submatrices_with_all_ones.NumSubMat([][]int{{0, 1, 1, 0}, {0, 1, 1, 1}, {1, 1, 1, 0}}))
 }
 
 func test1277() {
@@ -232,10 +280,10 @@ func test2294() {
 }
 
 func test3341() {
-	//fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{0, 4}, {4, 4}}))
-	//fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{0, 0, 0}, {0, 0, 0}}))
-	//fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{0, 1}, {1, 2}}))
-	//fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{0, 88, 10}, {89, 41, 69}, {63, 39, 35}}))
+	// fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{0, 4}, {4, 4}}))
+	// fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{0, 0, 0}, {0, 0, 0}}))
+	// fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{0, 1}, {1, 2}}))
+	// fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{0, 88, 10}, {89, 41, 69}, {63, 39, 35}}))
 	fmt.Println(find_minimum_time_to_reach_last_room_i.MinTimeToReach([][]int{{94, 79, 62, 27, 69, 84}, {6, 32, 11, 82, 42, 30}}))
 }
 
@@ -282,17 +330,17 @@ func test1472() {
 	println(obj.Back(1))
 	println(obj.Forward(1))
 
-	//obj.Visit("https://qq1.com")
-	//obj.Visit("https://qq2.com")
-	//obj.Visit("https://qq3.com")
-	//obj.Visit("https://qq4.com")
-	//obj.Visit("https://qq5.com")
-	//println(obj.Back(1))
-	//println(obj.Back(1))
-	//println(obj.Back(1))
-	//obj.Visit("https://qq6.com")
-	//println(obj.Back(1))
-	//println(obj.Forward(1))
+	// obj.Visit("https://qq1.com")
+	// obj.Visit("https://qq2.com")
+	// obj.Visit("https://qq3.com")
+	// obj.Visit("https://qq4.com")
+	// obj.Visit("https://qq5.com")
+	// println(obj.Back(1))
+	// println(obj.Back(1))
+	// println(obj.Back(1))
+	// obj.Visit("https://qq6.com")
+	// println(obj.Back(1))
+	// println(obj.Forward(1))
 }
 
 func test42() {
@@ -328,9 +376,9 @@ func test2239() {
 }
 
 func test3095() {
-	//fmt.Println(shortest_subarray_with_or_at_least_k_i.MinimumSubarrayLength([]int{1, 2, 3}, 2))
-	//fmt.Println(shortest_subarray_with_or_at_least_k_i.MinimumSubarrayLength([]int{2, 1, 8}, 10))
-	//fmt.Println(shortest_subarray_with_or_at_least_k_i.MinimumSubarrayLength([]int{1, 2}, 0))
+	// fmt.Println(shortest_subarray_with_or_at_least_k_i.MinimumSubarrayLength([]int{1, 2, 3}, 2))
+	// fmt.Println(shortest_subarray_with_or_at_least_k_i.MinimumSubarrayLength([]int{2, 1, 8}, 10))
+	// fmt.Println(shortest_subarray_with_or_at_least_k_i.MinimumSubarrayLength([]int{1, 2}, 0))
 	fmt.Println(shortest_subarray_with_or_at_least_k_i.MinimumSubarrayLength([]int{1, 12, 2, 5}, 43))
 }
 
@@ -421,8 +469,8 @@ func test55() {
 }
 
 func test935() {
-	//fmt.Println(knight_dialer.KnightDialer(1))
-	//fmt.Println(knight_dialer.KnightDialer(2))
+	// fmt.Println(knight_dialer.KnightDialer(1))
+	// fmt.Println(knight_dialer.KnightDialer(2))
 	fmt.Println(knight_dialer.KnightDialer(3131))
 }
 
