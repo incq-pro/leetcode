@@ -4,9 +4,11 @@ import (
 	"fmt"
 	best_time_to_buy_and_sell_stock "leetcode/best-time-to-buy-and-sell-stock"
 	best_time_to_buy_and_sell_stock_ii "leetcode/best-time-to-buy-and-sell-stock-ii"
+	best_time_to_buy_and_sell_stock_with_cooldown "leetcode/best-time-to-buy-and-sell-stock-with-cooldown"
 	clear_digits "leetcode/clear-digits"
 	construct_binary_tree_from_preorder_and_inorder_traversal "leetcode/construct-binary-tree-from-preorder-and-inorder-traversal"
 	container_with_most_water "leetcode/container-with-most-water"
+	convert_integer_to_the_sum_of_two_no_zero_integers "leetcode/convert-integer-to-the-sum-of-two-no-zero-integers"
 	count_increasing_quadruplets "leetcode/count-increasing-quadruplets"
 	count_number_of_maximum_bitwise_or_subsets "leetcode/count-number-of-maximum-bitwise-or-subsets"
 	count_pairs_that_form_a_complete_day_i "leetcode/count-pairs-that-form-a-complete-day-i"
@@ -16,12 +18,14 @@ import (
 	count_substrings_that_can_be_rearranged_to_contain_a_string_i "leetcode/count-substrings-that-can-be-rearranged-to-contain-a-string-i"
 	count_the_hidden_sequences "leetcode/count-the-hidden-sequences"
 	delete_characters_to_make_fancy_string "leetcode/delete-characters-to-make-fancy-string"
+	design_a_number_container_system "leetcode/design-a-number-container-system"
 	design_an_ordered_stream "leetcode/design-an-ordered-stream"
 	design_browser_history "leetcode/design-browser-history"
 	destination_city "leetcode/destination-city"
 	final_array_state_after_k_multiplication_operations_i "leetcode/final-array-state-after-k-multiplication-operations-i"
 	find_all_k_distant_indices_in_an_array "leetcode/find-all-k-distant-indices-in-an-array"
 	find_closest_number_to_zero "leetcode/find-closest-number-to-zero"
+	find_closest_person "leetcode/find-closest-person"
 	find_minimum_time_to_reach_last_room_i "leetcode/find-minimum-time-to-reach-last-room-i"
 	find_subarray_with_bitwise_or_closest_to_k "leetcode/find-subarray-with-bitwise-or-closest-to-k"
 	find_the_maximum_length_of_a_good_subsequence_i "leetcode/find-the-maximum-length-of-a-good-subsequence-i"
@@ -40,11 +44,14 @@ import (
 	happy_students "leetcode/happy-students"
 	house_robber_ii "leetcode/house-robber-ii"
 	increasing_triplet_subsequence "leetcode/increasing-triplet-subsequence"
+	integer_break "leetcode/integer-break"
+	integer_replacement "leetcode/integer-replacement"
 	interleaving_string "leetcode/interleaving-string"
 	jump_game "leetcode/jump-game"
 	jump_game_ii "leetcode/jump-game-ii"
 	knight_dialer "leetcode/knight-dialer"
 	length_of_the_longest_alphabetical_continuous_substring "leetcode/length-of-the-longest-alphabetical-continuous-substring"
+	longest_increasing_subsequence "leetcode/longest-increasing-subsequence"
 	longest_palindromic_substring "leetcode/longest-palindromic-substring"
 	longest_subarray_with_maximum_bitwise_and "leetcode/longest-subarray-with-maximum-bitwise-and"
 	longest_substring_without_repeating_characters "leetcode/longest-substring-without-repeating-characters"
@@ -52,6 +59,7 @@ import (
 	maximize_the_confusion_of_an_exam "leetcode/maximize-the-confusion-of-an-exam"
 	maximum_average_pass_ratio "leetcode/maximum-average-pass-ratio"
 	maximum_consecutive_floors_without_special_floors "leetcode/maximum-consecutive-floors-without-special-floors"
+	maximum_number_of_words_you_can_type "leetcode/maximum-number-of-words-you-can-type"
 	maximum_spending_after_buying_items "leetcode/maximum-spending-after-buying-items"
 	maximum_strength_of_a_group "leetcode/maximum-strength-of-a-group"
 	maximum_value_of_k_coins_from_piles "leetcode/maximum-value-of-k-coins-from-piles"
@@ -59,9 +67,12 @@ import (
 	minimum_cost_to_cut_a_stick "leetcode/minimum-cost-to-cut-a-stick"
 	minimum_moves_to_capture_the_queen "leetcode/minimum-moves-to-capture-the-queen"
 	minimum_number_of_flips_to_make_binary_grid_palindromic_i "leetcode/minimum-number-of-flips-to-make-binary-grid-palindromic-i"
+	minimum_number_of_people_to_teach "leetcode/minimum-number-of-people-to-teach"
 	minimum_operations_to_exceed_threshold_value_i "leetcode/minimum-operations-to-exceed-threshold-value-i"
 	minimum_operations_to_exceed_threshold_value_ii "leetcode/minimum-operations-to-exceed-threshold-value-ii"
+	minimum_operations_to_make_the_integer_zero "leetcode/minimum-operations-to-make-the-integer-zero"
 	number_of_changing_keys "leetcode/number-of-changing-keys"
+	number_of_people_aware_of_a_secret "leetcode/number-of-people-aware-of-a-secret"
 	number_of_ways_to_split_array "leetcode/number-of-ways-to-split-array"
 	number_of_zero_filled_subarrays "leetcode/number-of-zero-filled-subarrays"
 	palindrome_number "leetcode/palindrome-number"
@@ -70,8 +81,10 @@ import (
 	partition_array_such_that_maximum_difference_is_k "leetcode/partition-array-such-that-maximum-difference-is-k"
 	partition_equal_subset_sum "leetcode/partition-equal-subset-sum"
 	pascals_triangle_ii "leetcode/pascals-triangle-ii"
+	perfect_squares "leetcode/perfect-squares"
 	range_product_queries_of_powers "leetcode/range-product-queries-of-powers"
 	remove_duplicate_letters "leetcode/remove-duplicate-letters"
+	replace_non_coprime_numbers_in_array "leetcode/replace-non-coprime-numbers-in-array"
 	reverse_integer "leetcode/reverse-integer"
 	seat_reservation_manager "leetcode/seat-reservation-manager"
 	semi_ordered_permutation "leetcode/semi-ordered-permutation"
@@ -80,22 +93,138 @@ import (
 	smallest_range_i "leetcode/smallest-range-i"
 	smallest_range_ii "leetcode/smallest-range-ii"
 	smallest_subarrays_with_maximum_bitwise_or "leetcode/smallest-subarrays-with-maximum-bitwise-or"
+	sort_vowels_in_a_string "leetcode/sort-vowels-in-a-string"
 	soup_servings "leetcode/soup-servings"
 	string_to_integer_atoi "leetcode/string-to-integer-atoi"
+	super_ugly_number "leetcode/super-ugly-number"
 	the_latest_time_to_catch_a_bus "leetcode/the-latest-time-to-catch-a-bus"
 	time_needed_to_buy_tickets "leetcode/time-needed-to-buy-tickets"
 	trapping_rain_water "leetcode/trapping-rain-water"
 	"leetcode/triangle"
 	two_sum "leetcode/two-sum"
+	ugly_number_ii "leetcode/ugly-number-ii"
 	valid_word "leetcode/valid-word"
+	vowels_game_in_a_string "leetcode/vowels-game-in-a-string"
 	ways_to_express_an_integer_as_sum_of_powers "leetcode/ways-to-express-an-integer-as-sum-of-powers"
+	wiggle_subsequence "leetcode/wiggle-subsequence"
 	word_break "leetcode/word-break"
 	zigzag_conversion "leetcode/zigzag-conversion"
 	"math"
 )
 
 func main() {
-	test3027()
+	test2349()
+}
+
+func test2349() {
+	nc := design_a_number_container_system.Constructor()
+	fmt.Println(nc.Find(10))
+	nc.Change(2, 10)
+	nc.Change(1, 10)
+	nc.Change(3, 10)
+	nc.Change(5, 10)
+	fmt.Println(nc.Find(10))
+	nc.Change(1, 20)
+	fmt.Println(nc.Find(10))
+}
+
+func test343() {
+	fmt.Println(integer_break.IntegerBreak(2))
+	fmt.Println(integer_break.IntegerBreak(3))
+	fmt.Println(integer_break.IntegerBreak(10))
+}
+
+func test2197() {
+	fmt.Println(replace_non_coprime_numbers_in_array.ReplaceNonCoprimes([]int{6}))
+	fmt.Println(replace_non_coprime_numbers_in_array.ReplaceNonCoprimes([]int{6, 15}))
+	fmt.Println(replace_non_coprime_numbers_in_array.ReplaceNonCoprimes([]int{6, 4, 3, 2, 7, 6, 2}))
+}
+
+func test397() {
+	fmt.Println(integer_replacement.IntegerReplacement(8))
+	fmt.Println(integer_replacement.IntegerReplacement(7))
+	fmt.Println(integer_replacement.IntegerReplacement(4))
+
+}
+
+func test309() {
+	fmt.Println(best_time_to_buy_and_sell_stock_with_cooldown.MaxProfit([]int{1, 2, 3, 0, 2}))
+	fmt.Println(best_time_to_buy_and_sell_stock_with_cooldown.MaxProfit([]int{1}))
+}
+
+func test1935() {
+	fmt.Println(maximum_number_of_words_you_can_type.CanBeTypedWords("hello world", "ad"))
+	fmt.Println(maximum_number_of_words_you_can_type.CanBeTypedWords("leet code", "lt"))
+	fmt.Println(maximum_number_of_words_you_can_type.CanBeTypedWords("leet code", "e"))
+
+}
+
+func test3227() {
+	fmt.Println(vowels_game_in_a_string.DoesAliceWin("leetcoder"))
+	fmt.Println(vowels_game_in_a_string.DoesAliceWin("bbcd"))
+}
+
+func test313() {
+	fmt.Println(super_ugly_number.NthSuperUglyNumber(12, []int{2, 7, 13, 19}))
+	fmt.Println(super_ugly_number.NthSuperUglyNumber(1, []int{2, 3, 5}))
+}
+
+func test2785() {
+	fmt.Println(sort_vowels_in_a_string.SortVowels("lEetcOde"))
+	fmt.Println(sort_vowels_in_a_string.SortVowels("lYmpH"))
+}
+
+func test300() {
+	fmt.Println(longest_increasing_subsequence.LengthOfLIS([]int{10, 9, 2, 5, 3, 7, 101, 18}))
+	fmt.Println(longest_increasing_subsequence.LengthOfLIS([]int{0, 1, 0, 3, 2, 3}))
+	fmt.Println(longest_increasing_subsequence.LengthOfLIS([]int{7, 7, 7, 7, 7, 7, 7}))
+}
+
+func test1733() {
+	fmt.Println(minimum_number_of_people_to_teach.MinimumTeachings(2, [][]int{{1}, {2}, {1, 2}}, [][]int{{1, 2}, {1, 3}, {2, 3}}))
+	fmt.Println(minimum_number_of_people_to_teach.MinimumTeachings(3, [][]int{{2}, {1, 3}, {1, 2}, {3}}, [][]int{{1, 4}, {1, 2}, {3, 4}, {2, 3}}))
+}
+
+func test2327() {
+	fmt.Println(number_of_people_aware_of_a_secret.PeopleAwareOfSecret(6, 2, 4))
+	fmt.Println(number_of_people_aware_of_a_secret.PeopleAwareOfSecret(4, 1, 3))
+}
+
+func test376() {
+	fmt.Println(wiggle_subsequence.WiggleMaxLength([]int{1}))
+	fmt.Println(wiggle_subsequence.WiggleMaxLength([]int{1, 2}))
+	fmt.Println(wiggle_subsequence.WiggleMaxLength([]int{1, 2, 1, 1}))
+	fmt.Println(wiggle_subsequence.WiggleMaxLength([]int{1, 7, 4, 9, 2, 5}))
+	fmt.Println(wiggle_subsequence.WiggleMaxLength([]int{1, 17, 5, 10, 13, 15, 10, 5, 16, 8}))
+	fmt.Println(wiggle_subsequence.WiggleMaxLength([]int{1, 2, 3, 4, 5, 6, 7, 8, 9}))
+
+}
+
+func test279() {
+	fmt.Println(perfect_squares.NumSquares(12))
+	fmt.Println(perfect_squares.NumSquares(13))
+}
+
+func test1317() {
+	fmt.Println(convert_integer_to_the_sum_of_two_no_zero_integers.GetNoZeroIntegers(2))
+	fmt.Println(convert_integer_to_the_sum_of_two_no_zero_integers.GetNoZeroIntegers(11))
+}
+
+func test2749() {
+	fmt.Println(minimum_operations_to_make_the_integer_zero.MakeTheIntegerZero(3, -2))
+	fmt.Println(minimum_operations_to_make_the_integer_zero.MakeTheIntegerZero(5, 7))
+	fmt.Println(minimum_operations_to_make_the_integer_zero.MakeTheIntegerZero(1111111111, 1))
+}
+
+func test264() {
+	fmt.Println(ugly_number_ii.NthUglyNumber(10))
+	fmt.Println(ugly_number_ii.NthUglyNumber(1))
+}
+
+func test3516() {
+	fmt.Println(find_closest_person.FindClosest(2, 7, 4))
+	fmt.Println(find_closest_person.FindClosest(2, 5, 6))
+	fmt.Println(find_closest_person.FindClosest(1, 5, 3))
 }
 
 func test3027() {
