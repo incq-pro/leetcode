@@ -7,7 +7,9 @@ import (
 	best_time_to_buy_and_sell_stock "leetcode/best-time-to-buy-and-sell-stock"
 	best_time_to_buy_and_sell_stock_ii "leetcode/best-time-to-buy-and-sell-stock-ii"
 	best_time_to_buy_and_sell_stock_with_cooldown "leetcode/best-time-to-buy-and-sell-stock-with-cooldown"
+	check_if_digits_are_equal_in_string_after_operations_i "leetcode/check-if-digits-are-equal-in-string-after-operations-i"
 	clear_digits "leetcode/clear-digits"
+	combination_sum_iv "leetcode/combination-sum-iv"
 	construct_binary_tree_from_preorder_and_inorder_traversal "leetcode/construct-binary-tree-from-preorder-and-inorder-traversal"
 	container_with_most_water "leetcode/container-with-most-water"
 	convert_integer_to_the_sum_of_two_no_zero_integers "leetcode/convert-integer-to-the-sum-of-two-no-zero-integers"
@@ -49,6 +51,7 @@ import (
 	fruits_into_baskets_ii "leetcode/fruits-into-baskets-ii"
 	fruits_into_baskets_iii "leetcode/fruits-into-baskets-iii"
 	gas_station "leetcode/gas-station"
+	guess_number_higher_or_lower_ii "leetcode/guess-number-higher-or-lower-ii"
 	happy_students "leetcode/happy-students"
 	house_robber_ii "leetcode/house-robber-ii"
 	house_robber_iii "leetcode/house-robber-iii"
@@ -56,6 +59,7 @@ import (
 	integer_break "leetcode/integer-break"
 	integer_replacement "leetcode/integer-replacement"
 	interleaving_string "leetcode/interleaving-string"
+	is_subsequence "leetcode/is-subsequence"
 	jump_game "leetcode/jump-game"
 	jump_game_ii "leetcode/jump-game-ii"
 	knight_dialer "leetcode/knight-dialer"
@@ -63,9 +67,11 @@ import (
 	largest_perimeter_triangl "leetcode/largest-perimeter-triangl"
 	length_of_the_longest_alphabetical_continuous_substring "leetcode/length-of-the-longest-alphabetical-continuous-substring"
 	longest_increasing_subsequence "leetcode/longest-increasing-subsequence"
+	longest_palindrome "leetcode/longest-palindrome"
 	longest_palindromic_substring "leetcode/longest-palindromic-substring"
 	longest_subarray_with_maximum_bitwise_and "leetcode/longest-subarray-with-maximum-bitwise-and"
 	longest_substring_without_repeating_characters "leetcode/longest-substring-without-repeating-characters"
+	make_array_elements_equal_to_zero "leetcode/make-array-elements-equal-to-zero"
 	maximal_square "leetcode/maximal-square"
 	maximize_the_confusion_of_an_exam "leetcode/maximize-the-confusion-of-an-exam"
 	maximize_the_number_of_partitions_after_operations "leetcode/maximize-the-number-of-partitions-after-operations"
@@ -81,12 +87,16 @@ import (
 	minimum_cost_to_cut_a_stick "leetcode/minimum-cost-to-cut-a-stick"
 	minimum_moves_to_capture_the_queen "leetcode/minimum-moves-to-capture-the-queen"
 	minimum_number_of_flips_to_make_binary_grid_palindromic_i "leetcode/minimum-number-of-flips-to-make-binary-grid-palindromic-i"
+	minimum_number_of_increments_on_subarrays_to_form_a_target_array "leetcode/minimum-number-of-increments-on-subarrays-to-form-a-target-array"
 	minimum_number_of_people_to_teach "leetcode/minimum-number-of-people-to-teach"
 	minimum_operations_to_exceed_threshold_value_i "leetcode/minimum-operations-to-exceed-threshold-value-i"
 	minimum_operations_to_exceed_threshold_value_ii "leetcode/minimum-operations-to-exceed-threshold-value-ii"
 	minimum_operations_to_make_the_integer_zero "leetcode/minimum-operations-to-make-the-integer-zero"
 	minimum_score_triangulation_of_polygon "leetcode/minimum-score-triangulation-of-polygon"
+	next_greater_numerically_balanced_number "leetcode/next-greater-numerically-balanced-number"
+	non_overlapping_intervals "leetcode/non-overlapping-intervals"
 	number_of_changing_keys "leetcode/number-of-changing-keys"
+	number_of_laser_beams_in_a_bank "leetcode/number-of-laser-beams-in-a-bank"
 	number_of_people_aware_of_a_secret "leetcode/number-of-people-aware-of-a-secret"
 	number_of_ways_to_split_array "leetcode/number-of-ways-to-split-array"
 	number_of_zero_filled_subarrays "leetcode/number-of-zero-filled-subarrays"
@@ -107,6 +117,7 @@ import (
 	shortest_distance_after_road_addition_queries_ii "leetcode/shortest-distance-after-road-addition-queries-ii"
 	shortest_subarray_with_or_at_least_k_i "leetcode/shortest-subarray-with-or-at-least-k-i"
 	smallest_missing_non_negative_integer_after_operations "leetcode/smallest-missing-non-negative-integer-after-operations"
+	smallest_number_with_all_set_bits "leetcode/smallest-number-with-all-set-bits"
 	smallest_range_i "leetcode/smallest-range-i"
 	smallest_range_ii "leetcode/smallest-range-ii"
 	smallest_subarrays_with_maximum_bitwise_or "leetcode/smallest-subarrays-with-maximum-bitwise-or"
@@ -116,6 +127,7 @@ import (
 	super_ugly_number "leetcode/super-ugly-number"
 	taking_maximum_energy_from_the_mystic_dungeon "leetcode/taking-maximum-energy-from-the-mystic-dungeon"
 	the_latest_time_to_catch_a_bus "leetcode/the-latest-time-to-catch-a-bus"
+	the_two_sneaky_numbers_of_digitville "leetcode/the-two-sneaky-numbers-of-digitville"
 	time_needed_to_buy_tickets "leetcode/time-needed-to-buy-tickets"
 	trapping_rain_water "leetcode/trapping-rain-water"
 	"leetcode/triangle"
@@ -132,7 +144,81 @@ import (
 )
 
 func main() {
-	test3347()
+	test409()
+}
+
+func test409() {
+	fmt.Println(longest_palindrome.LongestPalindrome("abccccdd"))
+	fmt.Println(longest_palindrome.LongestPalindrome("a"))
+
+}
+
+func test435() {
+	fmt.Println(non_overlapping_intervals.EraseOverlapIntervals([][]int{{1, 2}, {2, 3}, {3, 4}, {1, 3}}))
+	fmt.Println(non_overlapping_intervals.EraseOverlapIntervals([][]int{{1, 2}, {1, 2}, {1, 2}}))
+	fmt.Println(non_overlapping_intervals.EraseOverlapIntervals([][]int{{1, 2}, {2, 3}}))
+
+}
+
+func test3289() {
+	fmt.Println(the_two_sneaky_numbers_of_digitville.GetSneakyNumbers([]int{0, 1, 1, 0}))
+	fmt.Println(the_two_sneaky_numbers_of_digitville.GetSneakyNumbers([]int{0, 3, 2, 1, 3, 2}))
+	fmt.Println(the_two_sneaky_numbers_of_digitville.GetSneakyNumbers([]int{7, 1, 5, 4, 3, 4, 6, 0, 9, 5, 8, 2}))
+}
+
+func test1526() {
+	fmt.Println(minimum_number_of_increments_on_subarrays_to_form_a_target_array.MinNumberOperations([]int{1, 2, 3, 2, 1}))
+	fmt.Println(minimum_number_of_increments_on_subarrays_to_form_a_target_array.MinNumberOperations([]int{3, 1, 1, 2}))
+	fmt.Println(minimum_number_of_increments_on_subarrays_to_form_a_target_array.MinNumberOperations([]int{3, 1, 5, 4, 2}))
+}
+
+func test375() {
+	//fmt.Println(guess_number_higher_or_lower_ii.GetMoneyAmount(1))
+	//fmt.Println(guess_number_higher_or_lower_ii.GetMoneyAmount(2))
+	fmt.Println(guess_number_higher_or_lower_ii.GetMoneyAmount(10))
+}
+
+func test3370() {
+	fmt.Println(smallest_number_with_all_set_bits.SmallestNumber(1))
+	fmt.Println(smallest_number_with_all_set_bits.SmallestNumber(2))
+	fmt.Println(smallest_number_with_all_set_bits.SmallestNumber(3))
+	fmt.Println(smallest_number_with_all_set_bits.SmallestNumber(4))
+}
+
+func test392() {
+	fmt.Println(is_subsequence.IsSubsequence("abc", "ahbgdc"))
+	fmt.Println(is_subsequence.IsSubsequence("axc", "ahbgdc"))
+}
+
+func test377() {
+	fmt.Println(combination_sum_iv.CombinationSum4([]int{1, 2, 3}, 4))
+	fmt.Println(combination_sum_iv.CombinationSum4([]int{9}, 3))
+	fmt.Println(combination_sum_iv.CombinationSum4([]int{1, 2}, 1000))
+}
+
+func test3354() {
+	fmt.Println(make_array_elements_equal_to_zero.CountValidSelections([]int{1, 0, 2, 0, 3}))
+	fmt.Println(make_array_elements_equal_to_zero.CountValidSelections([]int{2, 3, 4, 0, 4, 1, 0}))
+	fmt.Println(make_array_elements_equal_to_zero.CountValidSelections([]int{16, 13, 10, 0, 0, 0, 10, 6, 7, 8, 7}))
+}
+
+func test2125() {
+	fmt.Println(number_of_laser_beams_in_a_bank.NumberOfBeams([]string{"011001", "000000", "010100", "001000"}))
+	fmt.Println(number_of_laser_beams_in_a_bank.NumberOfBeams([]string{"000", "111", "000"}))
+	fmt.Println(number_of_laser_beams_in_a_bank.NumberOfBeams([]string{"1", "0", "1", "1"}))
+	fmt.Println(number_of_laser_beams_in_a_bank.NumberOfBeams([]string{"1", "0", "0", "1"}))
+	fmt.Println(number_of_laser_beams_in_a_bank.NumberOfBeams([]string{"0", "0", "0", "1"}))
+}
+
+func test2048() {
+	fmt.Println(next_greater_numerically_balanced_number.NextBeautifulNumber(1))
+	fmt.Println(next_greater_numerically_balanced_number.NextBeautifulNumber(100))
+	fmt.Println(next_greater_numerically_balanced_number.NextBeautifulNumber(3000))
+}
+
+func test3461() {
+	fmt.Println(check_if_digits_are_equal_in_string_after_operations_i.HasSameDigits("3902"))
+	fmt.Println(check_if_digits_are_equal_in_string_after_operations_i.HasSameDigits("34789"))
 }
 
 func test3347() {
