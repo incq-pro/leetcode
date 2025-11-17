@@ -7,6 +7,7 @@ import (
 	best_time_to_buy_and_sell_stock "leetcode/best-time-to-buy-and-sell-stock"
 	best_time_to_buy_and_sell_stock_ii "leetcode/best-time-to-buy-and-sell-stock-ii"
 	best_time_to_buy_and_sell_stock_with_cooldown "leetcode/best-time-to-buy-and-sell-stock-with-cooldown"
+	check_if_all_1s_are_at_least_length_k_places_away "leetcode/check-if-all-1s-are-at-least-length-k-places-away"
 	check_if_digits_are_equal_in_string_after_operations_i "leetcode/check-if-digits-are-equal-in-string-after-operations-i"
 	clear_digits "leetcode/clear-digits"
 	combination_sum_iv "leetcode/combination-sum-iv"
@@ -47,6 +48,8 @@ import (
 	find_the_number_of_ways_to_place_people_i "leetcode/find-the-number-of-ways-to-place-people-i"
 	find_the_number_of_ways_to_place_people_ii "leetcode/find-the-number-of-ways-to-place-people-ii"
 	find_the_original_typed_string_i "leetcode/find-the-original-typed-string-i"
+	find_x_sum_of_all_k_long_subarrays_i "leetcode/find-x-sum-of-all-k-long-subarrays-i"
+	find_x_sum_of_all_k_long_subarrays_ii "leetcode/find-x-sum-of-all-k-long-subarrays-ii"
 	fruit_into_baskets "leetcode/fruit-into-baskets"
 	fruits_into_baskets_ii "leetcode/fruits-into-baskets-ii"
 	fruits_into_baskets_iii "leetcode/fruits-into-baskets-iii"
@@ -79,6 +82,7 @@ import (
 	maximum_consecutive_floors_without_special_floors "leetcode/maximum-consecutive-floors-without-special-floors"
 	maximum_frequency_of_an_element_after_performing_operations_i "leetcode/maximum-frequency-of-an-element-after-performing-operations-i"
 	maximum_frequency_of_an_element_after_performing_operations_ii "leetcode/maximum-frequency-of-an-element-after-performing-operations-ii"
+	maximum_number_of_operations_to_move_ones_to_the_end "leetcode/maximum-number-of-operations-to-move-ones-to-the-end"
 	maximum_number_of_words_you_can_type "leetcode/maximum-number-of-words-you-can-type"
 	maximum_spending_after_buying_items "leetcode/maximum-spending-after-buying-items"
 	maximum_strength_of_a_group "leetcode/maximum-strength-of-a-group"
@@ -88,7 +92,9 @@ import (
 	minimum_moves_to_capture_the_queen "leetcode/minimum-moves-to-capture-the-queen"
 	minimum_number_of_flips_to_make_binary_grid_palindromic_i "leetcode/minimum-number-of-flips-to-make-binary-grid-palindromic-i"
 	minimum_number_of_increments_on_subarrays_to_form_a_target_array "leetcode/minimum-number-of-increments-on-subarrays-to-form-a-target-array"
+	minimum_number_of_operations_to_make_all_array_elements_equal_to_1 "leetcode/minimum-number-of-operations-to-make-all-array-elements-equal-to-1"
 	minimum_number_of_people_to_teach "leetcode/minimum-number-of-people-to-teach"
+	minimum_operations_to_convert_all_elements_to_zero "leetcode/minimum-operations-to-convert-all-elements-to-zero"
 	minimum_operations_to_exceed_threshold_value_i "leetcode/minimum-operations-to-exceed-threshold-value-i"
 	minimum_operations_to_exceed_threshold_value_ii "leetcode/minimum-operations-to-exceed-threshold-value-ii"
 	minimum_operations_to_make_the_integer_zero "leetcode/minimum-operations-to-make-the-integer-zero"
@@ -100,6 +106,7 @@ import (
 	number_of_people_aware_of_a_secret "leetcode/number-of-people-aware-of-a-secret"
 	number_of_ways_to_split_array "leetcode/number-of-ways-to-split-array"
 	number_of_zero_filled_subarrays "leetcode/number-of-zero-filled-subarrays"
+	ones_and_zeroes "leetcode/ones-and-zeroes"
 	palindrome_number "leetcode/palindrome-number"
 	palindrome_partitioning "leetcode/palindrome-partitioning"
 	palindrome_partitioning_ii "leetcode/palindrome-partitioning-ii"
@@ -107,6 +114,7 @@ import (
 	partition_equal_subset_sum "leetcode/partition-equal-subset-sum"
 	pascals_triangle_ii "leetcode/pascals-triangle-ii"
 	perfect_squares "leetcode/perfect-squares"
+	power_grid_maintenance "leetcode/power-grid-maintenance"
 	range_product_queries_of_powers "leetcode/range-product-queries-of-powers"
 	remove_duplicate_letters "leetcode/remove-duplicate-letters"
 	remove_k_digits "leetcode/remove-k-digits"
@@ -144,13 +152,58 @@ import (
 )
 
 func main() {
-	test409()
+	test3228()
+}
+
+func test1437() {
+	fmt.Println(check_if_all_1s_are_at_least_length_k_places_away.KLengthApart([]int{1, 0, 0, 0, 1, 0, 0, 1}, 2))
+	fmt.Println(check_if_all_1s_are_at_least_length_k_places_away.KLengthApart([]int{1, 0, 0, 1, 0, 1}, 2))
+}
+
+func test3228() {
+	fmt.Println(maximum_number_of_operations_to_move_ones_to_the_end.MaxOperations("1001101"))
+	fmt.Println(maximum_number_of_operations_to_move_ones_to_the_end.MaxOperations("00111"))
+}
+
+func test2654() {
+	fmt.Println(minimum_number_of_operations_to_make_all_array_elements_equal_to_1.MinOperations([]int{2, 6, 3, 4}))
+	fmt.Println(minimum_number_of_operations_to_make_all_array_elements_equal_to_1.MinOperations([]int{2, 10, 6, 14}))
+}
+
+func test474() {
+	fmt.Println(ones_and_zeroes.FindMaxForm([]string{"10", "0001", "111001", "1", "0"}, 5, 3))
+	fmt.Println(ones_and_zeroes.FindMaxForm([]string{"10", "0", "1"}, 1, 1))
+}
+
+func test3542() {
+	fmt.Println(minimum_operations_to_convert_all_elements_to_zero.MinOperations([]int{0, 2}))
+	fmt.Println(minimum_operations_to_convert_all_elements_to_zero.MinOperations([]int{3, 1, 2, 1}))
+	fmt.Println(minimum_operations_to_convert_all_elements_to_zero.MinOperations([]int{1, 2, 1, 2, 1, 2}))
+}
+
+func test2528() {
+	fmt.Println()
+}
+
+func test3607() {
+	fmt.Println(power_grid_maintenance.ProcessQueries(5, [][]int{{1, 2}, {2, 3}, {3, 4}, {4, 5}}, [][]int{{1, 3}, {2, 1}, {1, 1}, {2, 2}, {1, 2}}))
+	fmt.Println(power_grid_maintenance.ProcessQueries(3, [][]int{}, [][]int{{1, 1}, {2, 1}, {1, 1}}))
+	fmt.Println(power_grid_maintenance.ProcessQueries(10, [][]int{{1, 2}, {1, 3}, {1, 4}}, [][]int{{1, 1}, {2, 1}, {1, 1}, {2, 2}, {1, 1}}))
+}
+
+func test3321() {
+	fmt.Println(find_x_sum_of_all_k_long_subarrays_ii.FindXSum([]int{1, 1, 2, 2, 3, 4, 2, 3}, 6, 2))
+	fmt.Println(find_x_sum_of_all_k_long_subarrays_ii.FindXSum([]int{3, 8, 7, 8, 7, 5}, 2, 2))
+}
+
+func test3318() {
+	fmt.Println(find_x_sum_of_all_k_long_subarrays_i.FindXSum([]int{1, 1, 2, 2, 3, 4, 2, 3}, 6, 2))
+	fmt.Println(find_x_sum_of_all_k_long_subarrays_i.FindXSum([]int{3, 8, 7, 8, 7, 5}, 2, 2))
 }
 
 func test409() {
 	fmt.Println(longest_palindrome.LongestPalindrome("abccccdd"))
 	fmt.Println(longest_palindrome.LongestPalindrome("a"))
-
 }
 
 func test435() {
