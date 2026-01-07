@@ -4,24 +4,25 @@
 package partition_equal_subset_sum
 
 func canPartition(nums []int) bool {
-	s1, s2 := nums[0], 0
-	left, right := 0, len(nums)
-	for {
-		if s1 < s2 {
-			if left >= right-1 {
+	s := 0
+	for _, num := range nums {
+		s += num
+	}
+	if s%2 != 0 {
+		return false
+	}
+	W := s / 2
+	dp := make([]int, W+1)
+	for _, num := range nums {
+		for j := W; j > 0; j-- {
+			if j-num >= 0 {
+				dp[j] = max(dp[j], dp[j-num]+num)
+			} else {
 				break
 			}
-			left += 1
-			s1 += nums[left]
-		} else {
-			if right <= left-1 {
-				break
-			}
-			right -= 1
-			s2 += nums[right]
 		}
 	}
-	return s1 == s2
+	return dp[W] == W
 }
 
 func CanPartition(nums []int) bool {

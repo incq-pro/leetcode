@@ -1,7 +1,7 @@
 // 976. 三角形的最大周长
 // https://leetcode.cn/problems/largest-perimeter-triangle
 
-package largest_perimeter_triangl
+package largest_perimeter_triangle
 
 import "slices"
 

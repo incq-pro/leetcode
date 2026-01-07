@@ -2,11 +2,16 @@ package main
 
 import (
 	"fmt"
+	__bit_and_2_bit_characters "leetcode/1-bit-and-2-bit-characters"
 	adjacent_increasing_subarrays_detection_i "leetcode/adjacent-increasing-subarrays-detection-i"
 	adjacent_increasing_subarrays_detection_ii "leetcode/adjacent-increasing-subarrays-detection-ii"
+	apple_redistribution_into_boxes "leetcode/apple-redistribution-into-boxes"
+	arithmetic_slices "leetcode/arithmetic-slices"
 	best_time_to_buy_and_sell_stock "leetcode/best-time-to-buy-and-sell-stock"
 	best_time_to_buy_and_sell_stock_ii "leetcode/best-time-to-buy-and-sell-stock-ii"
 	best_time_to_buy_and_sell_stock_with_cooldown "leetcode/best-time-to-buy-and-sell-stock-with-cooldown"
+	binary_prefix_divisible_by_5 "leetcode/binary-prefix-divisible-by-5"
+	can_i_win "leetcode/can-i-win"
 	check_if_all_1s_are_at_least_length_k_places_away "leetcode/check-if-all-1s-are-at-least-length-k-places-away"
 	check_if_digits_are_equal_in_string_after_operations_i "leetcode/check-if-digits-are-equal-in-string-after-operations-i"
 	clear_digits "leetcode/clear-digits"
@@ -17,10 +22,13 @@ import (
 	count_elements_with_maximum_frequency "leetcode/count-elements-with-maximum-frequency"
 	count_increasing_quadruplets "leetcode/count-increasing-quadruplets"
 	count_number_of_maximum_bitwise_or_subsets "leetcode/count-number-of-maximum-bitwise-or-subsets"
+	count_number_of_trapezoids_i "leetcode/count-number-of-trapezoids-i"
+	count_number_of_trapezoids_ii "leetcode/count-number-of-trapezoids-ii"
 	count_numbers_with_unique_digits "leetcode/count-numbers-with-unique-digits"
 	count_pairs_that_form_a_complete_day_i "leetcode/count-pairs-that-form-a-complete-day-i"
 	count_prefixes_of_a_given_string "leetcode/count-prefixes-of-a-given-string"
 	count_square_submatrices_with_all_ones "leetcode/count-square-submatrices-with-all-ones"
+	count_square_sum_triples "leetcode/count-square-sum-triples"
 	count_submatrices_with_all_ones "leetcode/count-submatrices-with-all-ones"
 	count_substrings_that_can_be_rearranged_to_contain_a_string_i "leetcode/count-substrings-that-can-be-rearranged-to-contain-a-string-i"
 	count_the_hidden_sequences "leetcode/count-the-hidden-sequences"
@@ -50,6 +58,7 @@ import (
 	find_the_original_typed_string_i "leetcode/find-the-original-typed-string-i"
 	find_x_sum_of_all_k_long_subarrays_i "leetcode/find-x-sum-of-all-k-long-subarrays-i"
 	find_x_sum_of_all_k_long_subarrays_ii "leetcode/find-x-sum-of-all-k-long-subarrays-ii"
+	four_divisors "leetcode/four-divisors"
 	fruit_into_baskets "leetcode/fruit-into-baskets"
 	fruits_into_baskets_ii "leetcode/fruits-into-baskets-ii"
 	fruits_into_baskets_iii "leetcode/fruits-into-baskets-iii"
@@ -65,27 +74,36 @@ import (
 	is_subsequence "leetcode/is-subsequence"
 	jump_game "leetcode/jump-game"
 	jump_game_ii "leetcode/jump-game-ii"
+	keep_multiplying_found_values_by_two "leetcode/keep-multiplying-found-values-by-two"
 	knight_dialer "leetcode/knight-dialer"
 	largest_divisible_subset "leetcode/largest-divisible-subset"
-	largest_perimeter_triangl "leetcode/largest-perimeter-triangl"
+	largest_perimeter_triangl "leetcode/largest-perimeter-triangle"
 	length_of_the_longest_alphabetical_continuous_substring "leetcode/length-of-the-longest-alphabetical-continuous-substring"
 	longest_increasing_subsequence "leetcode/longest-increasing-subsequence"
 	longest_palindrome "leetcode/longest-palindrome"
 	longest_palindromic_substring "leetcode/longest-palindromic-substring"
 	longest_subarray_with_maximum_bitwise_and "leetcode/longest-subarray-with-maximum-bitwise-and"
 	longest_substring_without_repeating_characters "leetcode/longest-substring-without-repeating-characters"
+	magic_squares_in_grid "leetcode/magic-squares-in-grid"
 	make_array_elements_equal_to_zero "leetcode/make-array-elements-equal-to-zero"
+	matchsticks_to_square "leetcode/matchsticks-to-square"
 	maximal_square "leetcode/maximal-square"
 	maximize_the_confusion_of_an_exam "leetcode/maximize-the-confusion-of-an-exam"
+	maximize_the_minimum_powered_city "leetcode/maximize-the-minimum-powered-city"
 	maximize_the_number_of_partitions_after_operations "leetcode/maximize-the-number-of-partitions-after-operations"
 	maximum_average_pass_ratio "leetcode/maximum-average-pass-ratio"
 	maximum_consecutive_floors_without_special_floors "leetcode/maximum-consecutive-floors-without-special-floors"
 	maximum_frequency_of_an_element_after_performing_operations_i "leetcode/maximum-frequency-of-an-element-after-performing-operations-i"
 	maximum_frequency_of_an_element_after_performing_operations_ii "leetcode/maximum-frequency-of-an-element-after-performing-operations-ii"
+	maximum_level_sum_of_a_binary_tree "leetcode/maximum-level-sum-of-a-binary-tree"
+	maximum_matrix_sum "leetcode/maximum-matrix-sum"
 	maximum_number_of_operations_to_move_ones_to_the_end "leetcode/maximum-number-of-operations-to-move-ones-to-the-end"
 	maximum_number_of_words_you_can_type "leetcode/maximum-number-of-words-you-can-type"
+	maximum_product_of_splitted_binary_tree "leetcode/maximum-product-of-splitted-binary-tree"
+	maximum_running_time_of_n_computers "leetcode/maximum-running-time-of-n-computers"
 	maximum_spending_after_buying_items "leetcode/maximum-spending-after-buying-items"
 	maximum_strength_of_a_group "leetcode/maximum-strength-of-a-group"
+	maximum_subarray_sum_with_length_divisible_by_k "leetcode/maximum-subarray-sum-with-length-divisible-by-k"
 	maximum_value_of_k_coins_from_piles "leetcode/maximum-value-of-k-coins-from-piles"
 	minimum_array_end "leetcode/minimum-array-end"
 	minimum_cost_to_cut_a_stick "leetcode/minimum-cost-to-cut-a-stick"
@@ -104,6 +122,7 @@ import (
 	number_of_changing_keys "leetcode/number-of-changing-keys"
 	number_of_laser_beams_in_a_bank "leetcode/number-of-laser-beams-in-a-bank"
 	number_of_people_aware_of_a_secret "leetcode/number-of-people-aware-of-a-secret"
+	number_of_smooth_descent_periods_of_a_stock "leetcode/number-of-smooth-descent-periods-of-a-stock"
 	number_of_ways_to_split_array "leetcode/number-of-ways-to-split-array"
 	number_of_zero_filled_subarrays "leetcode/number-of-zero-filled-subarrays"
 	ones_and_zeroes "leetcode/ones-and-zeroes"
@@ -115,15 +134,18 @@ import (
 	pascals_triangle_ii "leetcode/pascals-triangle-ii"
 	perfect_squares "leetcode/perfect-squares"
 	power_grid_maintenance "leetcode/power-grid-maintenance"
+	pyramid_transition_matrix "leetcode/pyramid-transition-matrix"
 	range_product_queries_of_powers "leetcode/range-product-queries-of-powers"
 	remove_duplicate_letters "leetcode/remove-duplicate-letters"
 	remove_k_digits "leetcode/remove-k-digits"
 	replace_non_coprime_numbers_in_array "leetcode/replace-non-coprime-numbers-in-array"
 	reverse_integer "leetcode/reverse-integer"
+	rotate_function "leetcode/rotate-function"
 	seat_reservation_manager "leetcode/seat-reservation-manager"
 	semi_ordered_permutation "leetcode/semi-ordered-permutation"
 	shortest_distance_after_road_addition_queries_ii "leetcode/shortest-distance-after-road-addition-queries-ii"
 	shortest_subarray_with_or_at_least_k_i "leetcode/shortest-subarray-with-or-at-least-k-i"
+	smallest_integer_divisible_by_k "leetcode/smallest-integer-divisible-by-k"
 	smallest_missing_non_negative_integer_after_operations "leetcode/smallest-missing-non-negative-integer-after-operations"
 	smallest_number_with_all_set_bits "leetcode/smallest-number-with-all-set-bits"
 	smallest_range_i "leetcode/smallest-range-i"
@@ -141,6 +163,7 @@ import (
 	"leetcode/triangle"
 	two_sum "leetcode/two-sum"
 	ugly_number_ii "leetcode/ugly-number-ii"
+	unique_substrings_in_wraparound_string "leetcode/unique-substrings-in-wraparound-string"
 	valid_triangle_number "leetcode/valid-triangle-number"
 	valid_word "leetcode/valid-word"
 	vowels_game_in_a_string "leetcode/vowels-game-in-a-string"
@@ -152,7 +175,167 @@ import (
 )
 
 func main() {
-	test3228()
+	test473()
+}
+
+func test1339() {
+	r := &maximum_product_of_splitted_binary_tree.TreeNode{
+		Val: 1,
+		Left: &maximum_product_of_splitted_binary_tree.TreeNode{
+			Val: 2,
+			Left: &maximum_product_of_splitted_binary_tree.TreeNode{
+				Val: 4,
+			},
+			Right: &maximum_product_of_splitted_binary_tree.TreeNode{
+				Val: 5,
+			},
+		},
+		Right: &maximum_product_of_splitted_binary_tree.TreeNode{
+			Val: 3,
+			Left: &maximum_product_of_splitted_binary_tree.TreeNode{
+				Val: 6,
+			},
+		},
+	}
+	fmt.Println(maximum_product_of_splitted_binary_tree.MaxProduct(r))
+}
+
+func test473() {
+	//fmt.Println(matchsticks_to_square.Makesquare([]int{1, 1, 2, 2, 2}))
+	//fmt.Println(matchsticks_to_square.Makesquare([]int{3, 3, 3, 3, 4}))
+	//fmt.Println(matchsticks_to_square.Makesquare([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}))
+	fmt.Println(matchsticks_to_square.Makesquare([]int{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 102}))
+	fmt.Println(matchsticks_to_square.Makesquare([]int{5969561, 8742425, 2513572, 3352059, 9084275, 2194427, 1017540, 2324577, 6810719, 8936380, 7868365, 2755770, 9954463, 9912280, 4713511}))
+}
+
+func test1161() {
+	r := maximum_level_sum_of_a_binary_tree.TreeNode{
+		Val: 1,
+	}
+	r.Left = &maximum_level_sum_of_a_binary_tree.TreeNode{
+		Val: 7,
+	}
+	r.Right = &maximum_level_sum_of_a_binary_tree.TreeNode{
+		Val: 0,
+	}
+	r.Left.Left = &maximum_level_sum_of_a_binary_tree.TreeNode{
+		Val: 7,
+	}
+	r.Left.Right = &maximum_level_sum_of_a_binary_tree.TreeNode{
+		Val: -8,
+	}
+	fmt.Println(maximum_level_sum_of_a_binary_tree.MaxLevelSum(&r))
+}
+
+func test1975() {
+	fmt.Println(maximum_matrix_sum.MaxMatrixSum([][]int{{1, -1}, {-1, 1}}))
+	fmt.Println(maximum_matrix_sum.MaxMatrixSum([][]int{{1, 2, 3}, {-1, -2, -3}, {1, 2, 3}}))
+	fmt.Println(maximum_matrix_sum.MaxMatrixSum([][]int{{-1, 0, -1}, {-2, 1, 3}, {3, 2, 2}}))
+	fmt.Println(maximum_matrix_sum.MaxMatrixSum([][]int{{2, 9, 3}, {5, 4, -4}, {1, 7, 1}}))
+}
+
+func test1390() {
+	fmt.Println(four_divisors.SumFourDivisors([]int{21, 4, 7}))
+	fmt.Println(four_divisors.SumFourDivisors([]int{21, 21}))
+	fmt.Println(four_divisors.SumFourDivisors([]int{1, 2, 3, 4, 5}))
+	fmt.Println(four_divisors.SumFourDivisors([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}))
+}
+
+func test467() {
+	//fmt.Println(unique_substrings_in_wraparound_string.FindSubstringInWraproundString("a"))
+	//fmt.Println(unique_substrings_in_wraparound_string.FindSubstringInWraproundString("cac"))
+	fmt.Println(unique_substrings_in_wraparound_string.FindSubstringInWraproundString("zab"))
+}
+
+func test840() {
+	fmt.Println(magic_squares_in_grid.NumMagicSquaresInside([][]int{{4, 3, 8, 4}, {9, 5, 1, 9}, {2, 7, 6, 2}}))
+	fmt.Println(magic_squares_in_grid.NumMagicSquaresInside([][]int{{8}}))
+}
+
+func test756() {
+	fmt.Println(pyramid_transition_matrix.PyramidTransition("A", []string{"BCC", "CDE", "CEA", "FFF"}))
+	fmt.Println(pyramid_transition_matrix.PyramidTransition("BCD", []string{"BCC", "CDE", "CEA", "FFF"}))
+	fmt.Println(pyramid_transition_matrix.PyramidTransition("AAAA", []string{"AAB", "AAC", "BCD", "BBE", "DEF"}))
+	fmt.Println(pyramid_transition_matrix.PyramidTransition("ABCDEF", []string{"ABA", "ABB", "ABC", "ABD", "ABE", "ABF", "BCA", "BCB", "BCC", "BCD", "BCE", "BCF", "CDA", "CDB", "CDC", "CDD", "CDE", "CDF"}))
+}
+
+func test3074() {
+	fmt.Println(apple_redistribution_into_boxes.MinimumBoxes([]int{1, 3, 2}, []int{4, 3, 1, 5, 2}))
+	fmt.Println(apple_redistribution_into_boxes.MinimumBoxes([]int{5, 5, 5}, []int{2, 4, 2, 7}))
+}
+func test2110() {
+	fmt.Println(number_of_smooth_descent_periods_of_a_stock.GetDescentPeriods([]int{3, 2, 1, 4}))
+	fmt.Println(number_of_smooth_descent_periods_of_a_stock.GetDescentPeriods([]int{8, 6, 7, 7}))
+	fmt.Println(number_of_smooth_descent_periods_of_a_stock.GetDescentPeriods([]int{1}))
+}
+
+func test1925() {
+	fmt.Println(count_square_sum_triples.CountTriples(5))
+	fmt.Println(count_square_sum_triples.CountTriples(10))
+}
+
+func test3625() {
+	fmt.Println(count_number_of_trapezoids_ii.CountTrapezoids([][]int{{-3, 2}, {3, 0}, {2, 3}, {3, 2}, {2, -3}}))
+	fmt.Println(count_number_of_trapezoids_ii.CountTrapezoids([][]int{{0, 0}, {1, 0}, {0, 1}, {2, 1}}))
+}
+
+func test464() {
+	fmt.Println(can_i_win.CanIWin(10, 11))
+	fmt.Println(can_i_win.CanIWin(10, 0))
+	fmt.Println(can_i_win.CanIWin(10, 1))
+}
+
+func test3623() {
+	fmt.Println(count_number_of_trapezoids_i.CountTrapezoids([][]int{{1, 0}, {2, 0}, {3, 0}, {2, 2}, {3, 2}}))
+	fmt.Println(count_number_of_trapezoids_i.CountTrapezoids([][]int{{0, 0}, {1, 0}, {0, 1}, {2, 1}}))
+	fmt.Println(count_number_of_trapezoids_i.CountTrapezoids([][]int{{1, 0}, {2, 0}, {3, 0}, {4, 0}, {5, 1}, {6, 1}}))
+}
+
+func test2141() {
+	fmt.Println(maximum_running_time_of_n_computers.MaxRunTime(2, []int{3, 3, 3}))
+	fmt.Println(maximum_running_time_of_n_computers.MaxRunTime(2, []int{1, 1, 1, 1}))
+}
+
+func test3381() {
+	//fmt.Println(maximum_subarray_sum_with_length_divisible_by_k.MaxSubarraySum([]int{1, 2}, 1))
+	//fmt.Println(maximum_subarray_sum_with_length_divisible_by_k.MaxSubarraySum([]int{-1, -2, -3, -4, -5}, 4))
+	//fmt.Println(maximum_subarray_sum_with_length_divisible_by_k.MaxSubarraySum([]int{-5, 1, 2, -3, 4}, 2))
+	fmt.Println(maximum_subarray_sum_with_length_divisible_by_k.MaxSubarraySum([]int{9, -11, 15}, 2))
+}
+
+func test1015() {
+	fmt.Println(smallest_integer_divisible_by_k.SmallestRepunitDivByK(1))
+	fmt.Println(smallest_integer_divisible_by_k.SmallestRepunitDivByK(2))
+	fmt.Println(smallest_integer_divisible_by_k.SmallestRepunitDivByK(3))
+	fmt.Println(smallest_integer_divisible_by_k.SmallestRepunitDivByK(4))
+	fmt.Println(smallest_integer_divisible_by_k.SmallestRepunitDivByK(5))
+}
+
+func test1018() {
+	fmt.Println(binary_prefix_divisible_by_5.PrefixesDivBy5([]int{0, 1, 1}))
+	fmt.Println(binary_prefix_divisible_by_5.PrefixesDivBy5([]int{1, 1, 1}))
+	fmt.Println(binary_prefix_divisible_by_5.PrefixesDivBy5([]int{1, 0, 1}))
+	fmt.Println(binary_prefix_divisible_by_5.PrefixesDivBy5([]int{1, 1, 0, 0, 0, 1, 0, 0, 1}))
+}
+
+func test413() {
+	fmt.Println(arithmetic_slices.NumberOfArithmeticSlices([]int{1, 2, 3, 4}))
+	fmt.Println(arithmetic_slices.NumberOfArithmeticSlices([]int{1}))
+}
+
+func test2154() {
+	fmt.Println(keep_multiplying_found_values_by_two.FindFinalValue([]int{5, 3, 6, 1, 12}, 3))
+	fmt.Println(keep_multiplying_found_values_by_two.FindFinalValue([]int{2, 7, 9}, 4))
+}
+
+func test396() {
+	fmt.Println(rotate_function.MaxRotateFunction([]int{4, 3, 2, 6}))
+	fmt.Println(rotate_function.MaxRotateFunction([]int{100}))
+}
+
+func test717() {
+	fmt.Println(__bit_and_2_bit_characters.IsOneBitCharacter([]int{1, 0, 0}))
+	fmt.Println(__bit_and_2_bit_characters.IsOneBitCharacter([]int{1, 1, 1, 0}))
 }
 
 func test1437() {
@@ -182,7 +365,8 @@ func test3542() {
 }
 
 func test2528() {
-	fmt.Println()
+	fmt.Println(maximize_the_minimum_powered_city.MaxPower([]int{1, 2, 4, 5, 0}, 1, 2))
+	fmt.Println(maximize_the_minimum_powered_city.MaxPower([]int{4, 4, 4, 4}, 0, 3))
 }
 
 func test3607() {
@@ -431,7 +615,6 @@ func test397() {
 	fmt.Println(integer_replacement.IntegerReplacement(8))
 	fmt.Println(integer_replacement.IntegerReplacement(7))
 	fmt.Println(integer_replacement.IntegerReplacement(4))
-
 }
 
 func test309() {
@@ -443,7 +626,6 @@ func test1935() {
 	fmt.Println(maximum_number_of_words_you_can_type.CanBeTypedWords("hello world", "ad"))
 	fmt.Println(maximum_number_of_words_you_can_type.CanBeTypedWords("leet code", "lt"))
 	fmt.Println(maximum_number_of_words_you_can_type.CanBeTypedWords("leet code", "e"))
-
 }
 
 func test3227() {
@@ -484,7 +666,6 @@ func test376() {
 	fmt.Println(wiggle_subsequence.WiggleMaxLength([]int{1, 7, 4, 9, 2, 5}))
 	fmt.Println(wiggle_subsequence.WiggleMaxLength([]int{1, 17, 5, 10, 13, 15, 10, 5, 16, 8}))
 	fmt.Println(wiggle_subsequence.WiggleMaxLength([]int{1, 2, 3, 4, 5, 6, 7, 8, 9}))
-
 }
 
 func test279() {
@@ -565,7 +746,6 @@ func test2348() {
 	fmt.Println(number_of_zero_filled_subarrays.ZeroFilledSubarray([]int{1, 3, 0, 0, 2, 0, 0, 4}))
 	fmt.Println(number_of_zero_filled_subarrays.ZeroFilledSubarray([]int{0, 0, 0, 2, 0, 0}))
 	fmt.Println(number_of_zero_filled_subarrays.ZeroFilledSubarray([]int{2, 10, 2019}))
-
 }
 
 func test2787() {
@@ -585,7 +765,6 @@ func test808() {
 
 func test105() {
 	fmt.Println(construct_binary_tree_from_preorder_and_inorder_traversal.BuildTree([]int{3, 9, 20, 15, 7}, []int{9, 3, 15, 20, 7}))
-
 }
 
 func test3479() {
